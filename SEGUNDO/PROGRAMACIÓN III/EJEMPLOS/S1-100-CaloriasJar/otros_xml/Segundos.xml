@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Segundos</comment>
+<entry key="0*0">Beefsteak</entry>
+<entry key="0*1">400</entry>
+<entry key="1*0">Lomo de cerdo</entry>
+<entry key="1*1">380</entry>
+<entry key="2*0">Huevos fritos con chorizo</entry>
+<entry key="2*1">290</entry>
+<entry key="3*0">Merluza a la romana</entry>
+<entry key="3*1">350</entry>
+<entry key="4*0">Calamares</entry>
+<entry key="4*1">540</entry>
+<entry key="5*0">Chuletillas de cordero</entry>
+<entry key="5*1">300</entry>
+</properties>

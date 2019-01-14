@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Platos</comment>
+<entry key="0*0">Ensalada mixta</entry>
+<entry key="0*1">100</entry>
+<entry key="1*0">Ensalada César</entry>
+<entry key="1*1">300</entry>
+<entry key="2*0">Sopa Castellana</entry>
+<entry key="2*1">200</entry>
+<entry key="3*0">Consomé</entry>
+<entry key="3*1">50</entry>
+<entry key="4*0">Paella</entry>
+<entry key="4*1">300</entry>
+<entry key="5*0">Alcachofas salteadas</entry>
+<entry key="5*1">200</entry>
+<entry key="6*0">Spaghetti Bolognesa</entry>
+<entry key="6*1">350</entry>
+<entry key="7*0">Lasagna</entry>
+<entry key="7*1">450</entry>
+</properties>

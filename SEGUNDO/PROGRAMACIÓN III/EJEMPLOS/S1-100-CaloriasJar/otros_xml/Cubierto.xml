@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Cubierto</comment>
+<entry key="0*0">Pan integral</entry>
+<entry key="0*1">50</entry>
+<entry key="1*0">Pan</entry>
+<entry key="1*1">50</entry>
+<entry key="2*0">Vino</entry>
+<entry key="2*1">80</entry>
+<entry key="3*0">Cerveza</entry>
+<entry key="3*1">60</entry>
+<entry key="4*0">Agua mineral</entry>
+<entry key="4*1">0</entry>
+</properties>

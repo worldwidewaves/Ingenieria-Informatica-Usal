@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Postres</comment>
+<entry key="0*0">Natillas</entry>
+<entry key="0*1">150</entry>
+<entry key="1*0">Arroz con leche</entry>
+<entry key="1*1">200</entry>
+<entry key="2*0">Flan de la casa</entry>
+<entry key="2*1">180</entry>
+</properties>
