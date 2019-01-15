@@ -1,0 +1,17 @@
+Pseudocódigo:
+Algoritmo media_suma
+Variables
+	entero num
+	entero contador
+	entero suma
+Inicio
+	contador  1
+	suma  0
+	leer (num)
+	Si (num > 0)
+		suma  suma + num
+		contador  contador + 1
+		leer (num)
+	FinSi
+	escribir (suma/contador)
+Final
