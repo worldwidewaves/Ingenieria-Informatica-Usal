@@ -18,6 +18,8 @@ Está bien pero habría estado mejor si hubiera atendido un mínimo en las prác
   - **Sesión 0**: Presentación de Prácticas
     - [Planificación Calendario](https://drive.google.com/open?id=1YuR4EldPu3iDZUIWyWlbEWjB70xyli2f)
     - [Introducción](https://drive.google.com/open?id=13MmjyYL3Odd9EpzXSsOGIzs8xvqwgx2y)
+    - [Crear Base de Datos](https://github.com/Z41D3L/ingenieria-informatica/blob/master/02-SEGUNDO/DISE%C3%91O%20DE%20BASES%20DE%20DATOS/EJERCICIOS%20SQL/01.%20CreaBD.sql)
+    - [Cargar Base de Datos](https://github.com/Z41D3L/ingenieria-informatica/blob/master/02-SEGUNDO/DISE%C3%91O%20DE%20BASES%20DE%20DATOS/EJERCICIOS%20SQL/02.%20CargaBD.sql)
   - **Sesión 1**: Introducción. LMD-Iniciación a Sentencias de Consulta
     - [Presentación SELECT BÁSICA](https://drive.google.com/open?id=1EuX9-zVUrX35glYYtDdV6Va_OSujfxkl)
     - [Enunciados SELECT BÁSICA](https://drive.google.com/open?id=1B6D7OCbEQr2LDAz623HBzyCh74Xqic5R)
