@@ -15,3 +15,5 @@ Organización y Gestión de Empresas |
 Computadores II | 
 
 <img src="https://i.imgur.com/vN5jG9r.gif" width="1000" height="500" />
+
+Esto es básicamente mi new years resolution de llevar las mierdas al día y a la vez una escusa pocha para usar GitHub.
