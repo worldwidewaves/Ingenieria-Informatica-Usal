@@ -1,5 +1,5 @@
 # Grado en Ingeniería Informática de la USAL
-Todos los trabajos, programas y demáses de la carrera ( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)
+Todos los trabajos, programas y demás pochedades de la carrera ( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)
 
 [PRIMERO](https://github.com/Z41D3L/ingenieria-informatica/tree/master/01-PRIMERO) | [SEGUNDO](https://github.com/Z41D3L/ingenieria-informatica/tree/master/02-SEGUNDO) | TERCERO | CUARTO
 ------- | ------- | ------- | ------- | 
@@ -16,4 +16,4 @@ Computadores II |
 
 <img src="https://i.imgur.com/vN5jG9r.gif" width="1000" height="500" />
 
-Esto es básicamente mi new years resolution de llevar las mierdas al día y a la vez una escusa pocha para usar GitHub.
+Básicamente mi new years resolution de llevar las mierdas al día y a la vez una pochoescusa para usar GitHub.
