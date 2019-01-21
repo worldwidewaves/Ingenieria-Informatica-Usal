@@ -14,7 +14,7 @@ Está bien pero habría estado mejor si hubiera atendido un mínimo en las prác
   - **Tema 5**: [Lenguajes Formales](https://drive.google.com/open?id=1imxRjVGMTwWFNzIvddlK2UKe0O-OS472)
   
   ## Prácticas
-  - **Soluciones**: [TODOS los ejercicios](https://github.com/Z41D3L/ingenieria-informatica/blob/master/02-SEGUNDO/DISE%C3%91O%20DE%20BASES%20DE%20DATOS/EJERCICIOS%20SQL/PRACTICAS%20Dise%C3%B1o%20de%20Bases%20de%20Datos.sql)
+  - **Soluciones**: [TODOS los ejercicios SQL](https://github.com/Z41D3L/ingenieria-informatica/blob/master/02-SEGUNDO/DISE%C3%91O%20DE%20BASES%20DE%20DATOS/EJERCICIOS%20SQL/PRACTICAS%20Dise%C3%B1o%20de%20Bases%20de%20Datos.sql)
   - **Sesión 0**: Presentación de Prácticas
     - [Planificación Calendario](https://drive.google.com/open?id=1YuR4EldPu3iDZUIWyWlbEWjB70xyli2f)
     - [Introducción](https://drive.google.com/open?id=13MmjyYL3Odd9EpzXSsOGIzs8xvqwgx2y)
@@ -31,6 +31,7 @@ Está bien pero habría estado mejor si hubiera atendido un mínimo en las prác
     - [Presentación OUTER JOIN](https://drive.google.com/open?id=18QpFRoin_2wQRB5f6druCP3NEbptgKaG)
     - [Enunciados OUTER JOIN](https://drive.google.com/open?id=1iY1sTa_t9RbUawLoIiIWee8V2wBPKAwb)
     - [Ejemplos OUTER JOIN](https://drive.google.com/open?id=1W0wFrEcEcQmnZhfUTG0lL5pk9lNTAXXC)
+    - [Esquema JOIN](https://drive.google.com/drive/folders/1X4NyUxwMiTISSRv3df994ddnCRtxfXeM)
   - **Sesión 4**: LDD - Gestión de Tablas
     - [Presentación Gestión de Tablas](https://drive.google.com/open?id=1NUIgNVWzT82nT4vciwHPVPCz2svRonTK)
     - [Restricciones de Integridad de Tabla (II)](https://drive.google.com/open?id=1CCJfeTze6pMrm7LeAruKVJTReALu6-Fd)
@@ -45,3 +46,7 @@ Está bien pero habría estado mejor si hubiera atendido un mínimo en las prác
   - **Sesión 8**: LMD - Sentencias de Consulta II - Consultas sobre Varias Tablas: Subselect
     - [Presentación Subselect](https://drive.google.com/open?id=1Yg7shjL2NNZ5ytr3rKg-OK0CTKb7sS9G)
     - [Enunciados Subselect](https://drive.google.com/open?id=1Bz6U5BQ7g5GjrxXJqwLggnRXhCCWY8rQ)
+    
+## Extra
+  - [Ejercicio TFG Studium](https://drive.google.com/open?id=1cb1s1Bnsc0jaqHpeTatF-m0VLWkjs26m)
+  - [Exámen 2014](https://drive.google.com/open?id=1dxCySObuxdHblRUagZtLfK2Mtu9V18Ko)
