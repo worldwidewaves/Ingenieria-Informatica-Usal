@@ -30,3 +30,6 @@ Tema 1: Electricidad y Magnetismo | Tema 2: Principios Físicos de los Semicondu
     - [OptoSwitch](https://drive.google.com/file/d/1cChKc9CL_mm1r1oQ6vJ0kJ2W_LycVQ12/view)
   - Práctica 5: [MOSFET en Conmutación](https://drive.google.com/file/d/1FI8aseHBmdLKlaUB3uQfkJBOMWSvvCN3/view)
   - Práctica 6: [Puertas Lógicas](https://drive.google.com/file/d/1BLS-ENcWP46afQOJERFpxy6rS9iCLj3M/view)
+  
+##  Apuntes Cuaderno
+  - [Apuntes 2017-2018](https://drive.google.com/open?id=14a1dzHt3sBymHkzEnK0kI-9UfsJVGCUa)
