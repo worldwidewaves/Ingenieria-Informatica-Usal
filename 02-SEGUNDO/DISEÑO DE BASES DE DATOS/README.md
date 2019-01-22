@@ -1,6 +1,8 @@
 # DISEÑO DE BASES DE DATOS [(Google Drive)](https://drive.google.com/drive/folders/1X4NyUxwMiTISSRv3df994ddnCRtxfXeM)
 Está bien pero habría estado mejor si hubiera atendido un mínimo en las prácticas en vez de dedicarme a copiar y decorar las soluciones que nos daban en un archivo para que quedase bonito.
 
+<img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/02-SEGUNDO/DISE%C3%91O%20DE%20BASES%20DE%20DATOS/img.jpg" width="1000" height="500" />
+
 ## Teoría
   - **Tema 0**: [Presentación de la Asignatura](https://drive.google.com/file/d/1YBmifZ7DHKNune9yb2wy3GBLVy1zf1mH/view)
   - **Tema 1**: [Introducción a los Sistemas de Bases de Datos](https://drive.google.com/open?id=1V8ikbvDsfGPSk5-b02U_88B-O7tE5Bt5)
