@@ -1,4 +1,9 @@
 # ESTADÍSTICA [(Google Drive)](https://drive.google.com/drive/u/0/folders/16aWnWUBaHgmMu2dI1zcAKktA5P8DHwmu)
+
+<p align="center">
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/ESTAD%C3%8DSTICA/img.png" width="400" height="500"/>
+</p>
+
 Si suspendes esto yo que tú iría al médico a hacerme una resonancia.
 
 Teoría | Problemas
