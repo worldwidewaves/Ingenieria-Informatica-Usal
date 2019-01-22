@@ -18,4 +18,8 @@ Nadie sabe de qué repachingadas va esto.
   - [Problemas III (Seminarios)](https://drive.google.com/file/d/1wswaSWAWBF-AqZwtWExKV3H4z9fF2SQS/view)
 
 ## Apuntes Cuaderno
-(Lo más importante, escanear en algún momento si hay ganas).
+  - [Curso 2017-2018](https://drive.google.com/open?id=1odMOjAJi1flrGmM1MYE1LkBqeG0b-NeG)
+  
+##  Exámenes
+  - [Primer Control 2017-2018](https://drive.google.com/open?id=1DwdlmmhWOsDFEpvlmpDNmNFytTdEepZz)
+  - [Segundo Control 2017-2018](https://drive.google.com/open?id=1k3XWGZSx97H1U7O8JPF5JlEQTmN51tdU)
