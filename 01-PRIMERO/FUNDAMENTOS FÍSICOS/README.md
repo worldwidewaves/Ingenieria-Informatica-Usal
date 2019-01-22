@@ -1,5 +1,11 @@
 # FUNDAMENTOS FÍSICOS [(Google Drive)](https://drive.google.com/drive/u/0/folders/1L7jjVUOD2Zhf4TxiRbgZApeFN72d4fAr)
 
+<p align="center">
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/FUNDAMENTOS%20F%C3%8DSICOS/img.jpg" width="400" height="400"/>
+</p>
+
+Tu cara cuando llega el primer exámen ^
+
 ## Intro
   - [Horario](https://drive.google.com/file/d/1NbGvbw6mp2bq-9qxrhOZZPLU1EfHetq-/view)
   - [Presentación](https://drive.google.com/file/d/1ejxZrodiyFohrpFOiv45L-qgBpFenmG_/view)
