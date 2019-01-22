@@ -1,5 +1,9 @@
 # SEÑALES Y SISTEMAS [(Google Drive)](https://drive.google.com/drive/folders/1b9VYlDOolO1bBdy4M1IjImydPDcsZBW5)
 
+<img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/02-SEGUNDO/SE%C3%91ALES%20Y%20SISTEMAS/img.jpg" width="1000" height="700" />
+
+Maldito Fourier.
+
 ## Temario
   - **Tema 0**: Presentación de la Asignatura
     - [Teoría](https://drive.google.com/open?id=1HDLqcAYmCmnqn-sQ8pytUUgd5HvuyYV4)
