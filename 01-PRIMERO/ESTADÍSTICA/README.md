@@ -6,6 +6,7 @@
 
 Si suspendes esto yo que tú iría al médico a hacerme una resonancia.
 
+##  Temario
 Teoría | Problemas
 ------ | ---------
 [Estadística Descriptiva](https://drive.google.com/file/d/1vpvq-1LtXRwINygUXSvvXM3YAAIb_8aX/view) | [Problemas Estadística Descriptiva](https://drive.google.com/file/d/1pLDf6Ld2MgKtubQLz9JuQQi1RV9NFxv6/view)
