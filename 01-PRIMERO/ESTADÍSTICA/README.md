@@ -8,8 +8,13 @@ Teoría | Problemas
 [Interferencia Estadística](https://drive.google.com/file/d/1iebZ4u2RVlHZ4CE4tyhpC2OPr_SqnbCH/view) | [Problemas Interferencia Estadística](https://drive.google.com/file/d/1Wex2o91Ijn1yW6nWCc9-ttl2DmE3QD7j/view)
 [Teoría de Colas](https://drive.google.com/file/d/1NqJ5ouoNAXY6E8YXjz_ygIBcgYUfKFVc/view) | [Problemas Teoría de Colas](https://drive.google.com/file/d/1aCxAG7Em1c-KO2shJa-oBITI2UcKzOY0/view)
 
-## Otros
-  - Apuntes Cuaderno (EsCaNeAr sI eSo (o no)).
+##  Apuntes Cuaderno
+  - [Curso 2017-2018](https://drive.google.com/open?id=1pdhFRTJMWLwWrer1T0YNFF7G33lUhaAe)
+  
+##  Exámenes
+  - [Exámen A 2017-2018](https://drive.google.com/open?id=15XjJdOlt6XpRk385iEH7NsJnJaAJoPxy)
+
+## Archivos Auxiliares
   - [Formulario](https://drive.google.com/file/d/19GWFun5YhmBwrDsvA3_5Ovs1WzxxnrPW/view)
   - [Distribuciones Probabilidad Tabla Cuantiles](https://drive.google.com/file/d/1tR9oQq7P8184u4eX_U1PZZlDKM2YCjxl/view)
   - [Tabla de Números Aleatorios (Teoría de Colas)](https://drive.google.com/file/d/1s-IUtpO8vZ53sPX0FCWo01eAk4hSoti3/view)
