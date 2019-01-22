@@ -26,4 +26,28 @@
     - [Teoría](https://drive.google.com/open?id=1tqxKgPmZ2nExv41DgbABN9xgHsY-nUkl)
     - [Ejercicios](https://drive.google.com/open?id=14rRGJw2FBzLfbfeDls7BYofkqZ7OaWIa)
     
-## Prácticas
+## Prácticas (MatLab y JSPC)
+  - **Tema 1**:
+    - Scripts de Ejemplo
+  - **Tema 2**:
+    - Guión
+    - Funciones Auxiliares
+    - Informe Entregado
+    - Código Entregado
+  - **Tema 3**:
+    - Guión
+    - Archivos Auxiliares
+    - Informe Entregado
+    - Código Entregado
+  - **Tema 4**:
+    - Guión
+    - Archivos Auxiliares
+    - Informe Entregado
+    - Código Entregado
+  - **Tema 5**: JPSC
+    - Guión
+    - JSPC
+    - Fichero Señal
+    - Trabajo Entregado
+  - **Tema 7**:
+    - Simulink
