@@ -1,5 +1,9 @@
 # PROGRAMACIÓN I [(Google Drive)](https://drive.google.com/drive/u/0/folders/1kDiAolt7a1Bh9Do3oYZe_gZibSFnHOiT)
 
+<p align="center">
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/PROGRAMACI%C3%93N%20I/img.png" width="800" height="600"/>
+</p>
+
 ## Introducción Programas
   - [Dev-C++](https://drive.google.com/file/d/1m2up6ZoWSMSS98hAV1qsejISgzSegno5/view)
   - [CodeBlocks](https://drive.google.com/file/d/17IoiK9cc5BIf7u53yi0cXPSBCAh4Tsk3/view)
