@@ -1,0 +1,3345 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+<!DOCTYPE diccionario SYSTEM "/usr/local/jakarta-tomcat-3.2.3/webapps/Diaweb/WEB-INF/classes/idiomas/diccionario.dtd">
+-->
+<!DOCTYPE diccionario[
+	<!ELEMENT diccionario (entrada)*>
+	<!ELEMENT entrada (idioma)*>
+	<!ATTLIST entrada numero CDATA #REQUIRED>
+	<!ELEMENT idioma (texto,ayuda?)>
+	<!ATTLIST idioma identificador CDATA #REQUIRED>
+	<!ELEMENT texto (#PCDATA)>
+	<!ELEMENT ayuda (#PCDATA)>
+]>
+<diccionario>
+	<entrada numero="1">
+		<idioma identificador="1">
+			<texto>¿Desea guardar la simulación?</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Do you want to save simulation?</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="10">
+		<idioma identificador="1">
+			<texto>Representación de Algoritmos de Estructuras de Datos v1.0</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Representation of Algorithms of Data Structures v1.0</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1001">
+		<idioma identificador="1">
+			<texto>Opciones</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Options</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1002">
+		<idioma identificador="1">
+			<texto>Ayuda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Help</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1003">
+		<idioma identificador="1">
+			<texto>Acerca de ..</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>About ..</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1004">
+		<idioma identificador="1">
+			<texto>Nuevo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>New</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1005">
+		<idioma identificador="1">
+			<texto>Abrir</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Open</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1006">
+		<idioma identificador="1">
+			<texto>Guardar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Save</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1007">
+		<idioma identificador="1">
+			<texto>Salir</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Exit</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1008">
+		<idioma identificador="1">
+			<texto>Imprimir dibujo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Print drawing</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="101">
+		<idioma identificador="1">
+			<texto>Imprimir texto</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Print text</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1010">
+		<idioma identificador="1">
+			<texto>Guardar ejecución</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Save simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1011">
+		<idioma identificador="1">
+			<texto>Mostrar ejecucion(texto)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Show simulation(text)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1013">
+		<idioma identificador="1">
+			<texto>Ayuda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Help</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1014">
+		<idioma identificador="1">
+			<texto>Ayuda en-línea</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Online help</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1015">
+		<idioma identificador="1">
+			<texto>TDA Pila</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1016">
+		<idioma identificador="1">
+			<texto>Apilar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Push</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1017">
+		<idioma identificador="1">
+			<texto>Desapilar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Pop</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1018">
+		<idioma identificador="1">
+			<texto>Cima</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Top</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1019">
+		<idioma identificador="1">
+			<texto>Cima y desapilar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Top and Pop</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="102">
+		<idioma identificador="1">
+			<texto>Es vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1020">
+		<idioma identificador="1">
+			<texto>Vaciar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1021">
+		<idioma identificador="1">
+			<texto>Información sobre TDA Pila</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about TDA Stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1023">
+		<idioma identificador="1">
+			<texto>Insertar un elemento en la pila</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Insert a new item into the stack, if not already full</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1024">
+		<idioma identificador="1">
+			<texto>Elimina el último elemento insertado</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove the most recently inserted item from the stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1025">
+		<idioma identificador="1">
+			<texto>Devuelve el último elemento insertado</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Get the most recently inserted item in the stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1026">
+		<idioma identificador="1">
+			<texto>Devuelve y elimina el último elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Return and remove most recently inserted item from the stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1027">
+		<idioma identificador="1">
+			<texto>Devuelve verdadero si vacía, falso si no vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Test if the stack is logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1028">
+		<idioma identificador="1">
+			<texto>Vacía la pila</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make the stack logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1029">
+		<idioma identificador="1">
+			<texto>Introduzca elemento que desea apilar (máx. 4 caracteres)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce element that it wants to push (máx. 4 characters)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="103">
+		<idioma identificador="1">
+			<texto>Archivo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>File</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1030">
+		<idioma identificador="1">
+			<texto>Apilar un elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Push an element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1031">
+		<idioma identificador="1">
+			<texto>Aviso: No ha introducido nada</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: It has not introduced anything</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1032">
+		<idioma identificador="1">
+			<texto>Información sobre TDA Pila</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about TDA Stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1033">
+		<idioma identificador="1">
+			<texto>Apilado: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Pushed:  </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1034">
+		<idioma identificador="1">
+			<texto>Imposible desapilar: Pila vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to pop: Empty stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1035">
+		<idioma identificador="1">
+			<texto>Desapilar un elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Pop an element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1036">
+		<idioma identificador="1">
+			<texto>Desapilado: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Poped: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1037">
+		<idioma identificador="1">
+			<texto>Elemento Cima: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Top element: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1038">
+		<idioma identificador="1">
+			<texto>Imposible obtener cima: pila vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to get top: empty stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1039">
+		<idioma identificador="1">
+			<texto>Obtener el elemento cima</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Get top element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1040">
+		<idioma identificador="1">
+			<texto>Imposible obtener cima y desapilar: pila vacía </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to top and pop: empty stack </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1041">
+		<idioma identificador="1">
+			<texto>Obtener cima y desapilar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Top and pop</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1042">
+		<idioma identificador="1">
+			<texto>Operación es vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Method is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1043">
+		<idioma identificador="1">
+			<texto>La pila está vacía </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Empty stack </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1044">
+		<idioma identificador="1">
+			<texto>La pila no está vacía </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Not empty stack </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1045">
+		<idioma identificador="1">
+			<texto>Vaciar pila </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make empty stack </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1046">
+		<idioma identificador="1">
+			<texto>Imposible vaciar pila: pila ya vacía </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to make empty stack: stack is empty </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1047">
+		<idioma identificador="1">
+			<texto>Se ha vaciado la pila </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Stack has been made empty </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1048">
+		<idioma identificador="1">
+			<texto>Estructura de Datos estudiada en Algoritmia(1ºI.T.I.S.)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Data Structure studied in Algorithms(1ºI.T.I.S.)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1049">
+		<idioma identificador="1">
+			<texto>Pregunta</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Question</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1050">
+		<idioma identificador="1">
+			<texto>Si</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Yes</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1051">
+		<idioma identificador="1">
+			<texto>Operaciones</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Methods</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1052">
+		<idioma identificador="1">
+			<texto>Ejecución de algoritmos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Execution of algorithms</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1053">
+		<idioma identificador="1">
+			<texto>Representación gráfica</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Graphical representation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1054">
+		<idioma identificador="1">
+			<texto>TDA Cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1055">
+		<idioma identificador="1">
+			<texto>Información sobre el TDA Cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about TDA Queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1056">
+		<idioma identificador="1">
+			<texto>Encolar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Enqueue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1057">
+		<idioma identificador="1">
+			<texto>Inserta un elemento en la cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Insert a new item into the queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1058">
+		<idioma identificador="1">
+			<texto>Frente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>GetFront</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1059">
+		<idioma identificador="1">
+			<texto>Devuelve el primer elemento de la cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Get the least recently inserted item in the queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1060">
+		<idioma identificador="1">
+			<texto>Quitar frente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Dequeue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1061">
+		<idioma identificador="1">
+			<texto>Devuelve y elimina el primer elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Return and remove the least recently inserted item from the queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1062">
+		<idioma identificador="1">
+			<texto>Es vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1063">
+		<idioma identificador="1">
+			<texto>Devuelve true si vacía,false si no vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Test if the queue is logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1064">
+		<idioma identificador="1">
+			<texto>Vaciar </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make empty </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1065">
+		<idioma identificador="1">
+			<texto>Elimina todos los elementos,vacía la cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make the queue logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1066">
+		<idioma identificador="1">
+			<texto>Introduzca elemento a encolar (max. 4 caracteres)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Enter an element to queue (max. 4 characters)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1067">
+		<idioma identificador="1">
+			<texto>Encolar un elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Enqueue an element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1068">
+		<idioma identificador="1">
+			<texto>Encolado: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Enqueued: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1069">
+		<idioma identificador="1">
+			<texto>Elemento frente (Primero de la cola): </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Front element (First of queue): </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1070">
+		<idioma identificador="1">
+			<texto>Imposible obtener frente. Cola vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to get front. Empty queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1071">
+		<idioma identificador="1">
+			<texto>Devolver el elemento frente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Get front of the queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1072">
+		<idioma identificador="1">
+			<texto>Frente: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Front: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1073">
+		<idioma identificador="1">
+			<texto>Desencolar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Dequeue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1074">
+		<idioma identificador="1">
+			<texto>Desencolado: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Dequeued: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1075">
+		<idioma identificador="1">
+			<texto>La cola está vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Queue is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1076">
+		<idioma identificador="1">
+			<texto>La cola no está vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Queue is not empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1077">
+		<idioma identificador="1">
+			<texto>Vaciado de la cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make queue empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1078">
+		<idioma identificador="1">
+			<texto>La cola ha sido vaciada</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Queue has been made empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1079">
+		<idioma identificador="1">
+			<texto>Imposible vaciar cola. Cola ya vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to make empty queue. Queue is empty yet</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1080">
+		<idioma identificador="1">
+			<texto>Simulación incorrecta</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Incorrect simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1081">
+		<idioma identificador="1">
+			<texto>Error: fichero.raed incorrecto</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Error: file.raed incorrect!</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1082">
+		<idioma identificador="1">
+			<texto>Aviso: no existe árbol, debe crearlo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: it doesn't exist a tree, you must create it</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1083">
+		<idioma identificador="1">
+			<texto>Información sobre TDA Árbol Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about TDA Binary Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1084">
+		<idioma identificador="1">
+			<texto>Recorrido pre-orden del árbol binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Pre-order route for binary tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1085">
+		<idioma identificador="1">
+			<texto>Recorrido en-orden del árbol binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>In-order route for binary tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1086">
+		<idioma identificador="1">
+			<texto>Recorrido post-orden del árbol binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Post-order route for binary tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1087">
+		<idioma identificador="1">
+			<texto>Recorrido por niveles del árbol binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Level-order route for binary tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1088">
+		<idioma identificador="1">
+			<texto>Recorrido finalizado</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Finalized route</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1089">
+		<idioma identificador="1">
+			<texto>TDA Árbol Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Binary Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1090">
+		<idioma identificador="1">
+			<texto>Nuevo Árbol Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>New Binary Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1091">
+		<idioma identificador="1">
+			<texto>Crea un nuevo árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Create new tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1092">
+		<idioma identificador="1">
+			<texto>Nuevo nodo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>New node</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1093">
+		<idioma identificador="1">
+			<texto>Creación de nodos hijos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Create child nodes</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1094">
+		<idioma identificador="1">
+			<texto>Recorrido</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Route</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1095">
+		<idioma identificador="1">
+			<texto>Recorrido del árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Tree route</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1096">
+		<idioma identificador="1">
+			<texto>Es vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1097">
+		<idioma identificador="1">
+			<texto>Devuelve true si vacío, false si no vacío </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Test if the tree is logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1098">
+		<idioma identificador="1">
+			<texto>Vaciar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1099">
+		<idioma identificador="1">
+			<texto>Vaciar el árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make an empty tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="11">
+		<idioma identificador="1">
+			<texto>Altura</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Height</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1100">
+		<idioma identificador="1">
+			<texto>Devuelve la altura</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Return tree height</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1101">
+		<idioma identificador="1">
+			<texto>Tamaño</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Size</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1102">
+		<idioma identificador="1">
+			<texto>Devuelve el tamaño</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Return size</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1104">
+		<idioma identificador="1">
+			<texto>Siguiente paso</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Next step</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1105">
+		<idioma identificador="1">
+			<texto>Ejecución paso a paso</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Step by step</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1106">
+		<idioma identificador="1">
+			<texto>Estructura de datos estudiada en Estructura de Datos(2ºI.T.I.S.)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Data Structure studied in Data Structure(2ºI.T.I.S.)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1107">
+		<idioma identificador="1">
+			<texto>Pre-orden</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Pre-order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1108">
+		<idioma identificador="1">
+			<texto>En-orden</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>In-order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="111">
+		<idioma identificador="1">
+			<texto>Post-orden</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Post-order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1110">
+		<idioma identificador="1">
+			<texto>Por niveles</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Level-order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1111">
+		<idioma identificador="1">
+			<texto>¿Qué recorrido desea realizar?</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>What route do you want to do?</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1113">
+		<idioma identificador="1">
+			<texto>Selección de recorrido</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Route selection</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1114">
+		<idioma identificador="1">
+			<texto>Paso a paso</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Step by step</texto>
+		</idioma>
+	</entrada>
+		<entrada numero="1115">
+		<idioma identificador="1">
+			<texto>¿Qué modo desea usar?</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>What mode do you want to use?</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1116">
+		<idioma identificador="1">
+			<texto>Selección de modo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Select a mode</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1117">
+		<idioma identificador="1">
+			<texto>Hijo izquierdo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Left node</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1118">
+		<idioma identificador="1">
+			<texto>Hijo derecho</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Right node</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1119">
+		<idioma identificador="1">
+			<texto>¿Qué inserción desea realizar?</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>What insertion do you want to do?</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1120">
+		<idioma identificador="1">
+			<texto>Selección de inserción</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Select an insertion</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1121">
+		<idioma identificador="1">
+			<texto>Introduzca valor para la raíz (núm.entero)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce a value for root (integer number)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1123">
+		<idioma identificador="1">
+			<texto>Aviso. No ha introducido nada</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning. You have introduced nothing</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1124">
+		<idioma identificador="1">
+			<texto>Insertado(raíz): </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Inserted(root): </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1125">
+		<idioma identificador="1">
+			<texto>Aviso. Debe introducir un entero(-1000,1000)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning. You must introduce an integer(-1000,1000)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1126">
+		<idioma identificador="1">
+			<texto>Operación es vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Method es vacío</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1127">
+		<idioma identificador="1">
+			<texto>El arbol está vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Empty tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1128">
+		<idioma identificador="1">
+			<texto>El árbol no esta vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Not empty tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1129">
+		<idioma identificador="1">
+			<texto>Vaciado de árbol binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make empty binary tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1130">
+		<idioma identificador="1">
+			<texto>Se ha vaciado el árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Binary tree has been made empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1131">
+		<idioma identificador="1">
+			<texto>Imposible vaciar árbol: árbol ya vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to make empty tree: binary tree is empty yet!</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1132">
+		<idioma identificador="1">
+			<texto>Operación tamaño</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Method size</texto>
+		</idioma>
+	</entrada>
+		<entrada numero="1133">
+		<idioma identificador="1">
+			<texto>Tamaño del árbol: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Tree size: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1134">
+		<idioma identificador="1">
+			<texto>Operación altura</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Operación height</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1135">
+		<idioma identificador="1">
+			<texto>Altura del árbol: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Tree height: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1136">
+		<idioma identificador="1">
+			<texto>Introduzca valor del nodo padre</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce father node value</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1137">
+		<idioma identificador="1">
+			<texto>Aviso: no se pueden introducir valores repetidos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It is not possible to be introduced repeated values </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1138">
+		<idioma identificador="1">
+			<texto>Insertado(hijo izquierdo): </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Inserted (left child): </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1139">
+		<idioma identificador="1">
+			<texto>Aviso: debe introducir un entero (-1000,1000) que exista en el árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: you must introduce an integer (-1000,1000) existing in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1140">
+		<idioma identificador="1">
+			<texto>Insertado(hijo derecho): </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Inserted (right child): </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1141">
+		<idioma identificador="1">
+			<texto>Introducir valor del nodo hijo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce child node value</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1142">
+		<idioma identificador="1">
+			<texto>Si</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Yes</texto>
+		</idioma>
+	</entrada>
+		<entrada numero="1143">
+		<idioma identificador="1">
+			<texto>Información TDA Árbol binario búsqueda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information TDA Binary Search Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1144">
+		<idioma identificador="1">
+			<texto>TDA A.B.B.</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA B.S.T.</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1145">
+		<idioma identificador="1">
+			<texto>Insertar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Insert</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1146">
+		<idioma identificador="1">
+			<texto>Inserta un elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto> Insert into the tree; duplicates are ignored</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1147">
+		<idioma identificador="1">
+			<texto>Eliminar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1148">
+		<idioma identificador="1">
+			<texto>Elimina un elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove from the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1149">
+		<idioma identificador="1">
+			<texto>Eliminar mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove min</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1150">
+		<idioma identificador="1">
+			<texto>Elimina el elemento mínimo del árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove the tree minimum</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1151">
+		<idioma identificador="1">
+			<texto>Buscar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1152">
+		<idioma identificador="1">
+			<texto>Buscar un elemento en el árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find an item in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1153">
+		<idioma identificador="1">
+			<texto>Buscar mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>FindMin</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1154">
+		<idioma identificador="1">
+			<texto>Busqueda del elemento mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find the smallest item in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1155">
+		<idioma identificador="1">
+			<texto>Buscar máximo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>FindMax</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1156">
+		<idioma identificador="1">
+			<texto>Búsqueda del elemento máximo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find the largest item in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1157">
+		<idioma identificador="1">
+			<texto>Es vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1158">
+		<idioma identificador="1">
+			<texto>Devuelve si el árbol es vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Test if the tree is logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1159">
+		<idioma identificador="1">
+			<texto>Vaciar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="116">
+		<idioma identificador="1">
+			<texto>Vaciado del árbol binario de búsqueda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make an empty binary search tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1160">
+		<idioma identificador="1">
+			<texto>Mostrar árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Show tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1161">
+		<idioma identificador="1">
+			<texto>Muestra el árbol ordenadamente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Print the tree contents in sorted order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1162">
+		<idioma identificador="1">
+			<texto>Introduzca valor (entero): </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce value (integer): </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1163">
+		<idioma identificador="1">
+			<texto>Insertar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Insert</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1164">
+		<idioma identificador="1">
+			<texto>Insertar elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Insert item</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1165">
+		<idioma identificador="1">
+			<texto>Insertado: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Inserted: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1166">
+		<idioma identificador="1">
+			<texto>Imposible insertar: elemento duplicado</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Impossible to insert: duplicated element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1167">
+		<idioma identificador="1">
+			<texto>Aviso: imposible insertar, elemento duplicado</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: impossible to insert, duplicated item</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1168">
+		<idioma identificador="1">
+			<texto>Imposible eliminar: elemento inexistente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Impossible to remove: unexisting element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1169">
+		<idioma identificador="1">
+			<texto>Aviso: imposible eliminar, elemento inexistente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: impossible to remove, unexisting element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1170">
+		<idioma identificador="1">
+			<texto>Eliminar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1171">
+		<idioma identificador="1">
+			<texto>Eliminado: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Removed: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1172">
+		<idioma identificador="1">
+			<texto>Eliminar mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove minimum</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1173">
+		<idioma identificador="1">
+			<texto>Buscar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find an item</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1174">
+		<idioma identificador="1">
+			<texto>Exito: el valor( </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Success: value( </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1175">
+		<idioma identificador="1">
+			<texto>Error: el valor ( </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Mistake: value ( </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1176">
+		<idioma identificador="1">
+			<texto> )existe en el árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto> )exists in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1177">
+		<idioma identificador="1">
+			<texto>) no existe en el árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>) doesn't exist in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1178">
+		<idioma identificador="1">
+			<texto>Introduzca elemento a buscar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce item to find</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1179">
+		<idioma identificador="1">
+			<texto>Buscar elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find an element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="118">
+		<idioma identificador="1">
+			<texto>Introduzca elemento a eliminar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce item to remove</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1180">
+		<idioma identificador="1">
+			<texto>Eliminar elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove item</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1181">
+		<idioma identificador="1">
+			<texto>Búsqueda de elemento mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find minimum item</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1182">
+		<idioma identificador="1">
+			<texto>Exito: el valor minimo es: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Success: the minimum value is: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1183">
+		<idioma identificador="1">
+			<texto>Error: no existe valor mínimo </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Mistake: it doesn't exist minimum value</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1184">
+		<idioma identificador="1">
+			<texto>Búsqueda de elemento máximo </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find maximum item </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1186">
+		<idioma identificador="1">
+			<texto>Exito: el valor máximo es: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Success: maximum value is: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1188">
+		<idioma identificador="1">
+			<texto>Error: no existe valor máximo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Success: It doesn't exist maximum value</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1189">
+		<idioma identificador="1">
+			<texto>Operación es vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Method is empty </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="119">
+		<idioma identificador="1">
+			<texto>El árbol está vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The tree is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1190">
+		<idioma identificador="1">
+			<texto>El árbol no está vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The tree is not empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1191">
+		<idioma identificador="1">
+			<texto>Vaciado de árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make an empty tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1192">
+		<idioma identificador="1">
+			<texto>Se ha vaciado el árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The tree has been made empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1193">
+		<idioma identificador="1">
+			<texto>Imposible vaciar árbol: árbol ya vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Impossible to make an empty tree: tree is empty yet</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1195">
+		<idioma identificador="1">
+			<texto>TDA Árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA AVL Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1196">
+		<idioma identificador="1">
+			<texto>Información sobre TDA Árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about TDA AVL Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1197">
+		<idioma identificador="1">
+			<texto>Insertar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Insert</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1198">
+		<idioma identificador="1">
+			<texto>Inserta un elemento en el árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Insert an item in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1199">
+		<idioma identificador="1">
+			<texto>Eliminar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="12">
+		<idioma identificador="1">
+			<texto>Eliminar un elemento del árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove an item from the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="120">
+		<idioma identificador="1">
+			<texto>Buscar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1200">
+		<idioma identificador="1">
+			<texto>Búsqueda de un elemento en el árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find an item in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1201">
+		<idioma identificador="1">
+			<texto>Buscar mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find min</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1202">
+		<idioma identificador="1">
+			<texto>Búsqueda del elemento mínimo del árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find the smallest item in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1203">
+		<idioma identificador="1">
+			<texto>Buscar máximo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>FindMax</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1204">
+		<idioma identificador="1">
+			<texto>Búsqueda del elemento máximo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Find the largest item in the tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1205">
+		<idioma identificador="1">
+			<texto>Es vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1206">
+		<idioma identificador="1">
+			<texto>Devuelve si el árbol es vacío o no</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Test if the tree is logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1207">
+		<idioma identificador="1">
+			<texto>Vaciar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1208">
+		<idioma identificador="1">
+			<texto>Vaciado del árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make the tree logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1209">
+		<idioma identificador="1">
+			<texto>Mostrar árbol</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Show tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="121">
+		<idioma identificador="1">
+			<texto>Muestra el árbol de forma ordenada</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Print the tree contents in sorted order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1210">
+		<idioma identificador="1">
+			<texto>Valor: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Value: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1211">
+		<idioma identificador="1">
+			<texto>Atención: Rotación Izquierda-Izquierda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Attention: Left-Left Rotation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1212">
+		<idioma identificador="1">
+			<texto>Atención: Rotación Derecha-Derecha</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Attention: Right-Right Rotation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1213">
+		<idioma identificador="1">
+			<texto>Atención: Rotación Izquierda-Derecha</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Attention: Left-Right Rotation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1214">
+		<idioma identificador="1">
+			<texto>Atención: Rotación Derecha-Izquierda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Attention: Right-Left Rotation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1215">
+		<idioma identificador="1">
+			<texto>Información TDA Montículo Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information TDA Binary Heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1216">
+		<idioma identificador="1">
+			<texto>Aviso: operación cancelada, montículo vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Attention: cancelled operation, empty binary heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1217">
+		<idioma identificador="1">
+			<texto>Aviso: no existe árbol, debe crearlo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Attention: it doesn't exist a tree, you must create it</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1218">
+		<idioma identificador="1">
+			<texto>TDA Montículo Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Binary Heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1219">
+		<idioma identificador="1">
+			<texto>Inserta un elemento en el montículo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>>Insert an item in the binary heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="122">
+		<idioma identificador="1">
+			<texto>Construir montículo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Build heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1220">
+		<idioma identificador="1">
+			<texto>Eliminar mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>DeleteMin</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1221">
+		<idioma identificador="1">
+			<texto>Devuelve y elimina el elemento más prioritario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Remove the smallest item from the priority queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1222">
+		<idioma identificador="1">
+			<texto>Eliminar todos los elementos, vacía la cola de prioridad</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Make the priority queue logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1223">
+		<idioma identificador="1">
+			<texto>Comprueba si la cola es vacía</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Test if the priority queue is logically empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1224">
+		<idioma identificador="1">
+			<texto>Incrementar clave</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Increase key</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1225">
+		<idioma identificador="1">
+			<texto>Decrementar clave</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Decrease key</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1226">
+		<idioma identificador="1">
+			<texto>Incrementa el valor de una posición</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Increase a position value</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1227">
+		<idioma identificador="1">
+			<texto>Decrementa el valor de una posición</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Decrease a position value</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1228">
+		<idioma identificador="1">
+			<texto>Ordenación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Heap sort</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1229">
+		<idioma identificador="1">
+			<texto>Introduzca valor (entero positivo): </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce value (positive integer): </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1230">
+		<idioma identificador="1">
+			<texto>Aviso. Debe introducir un entero(0,1000)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: You must introduce an integer(0,1000)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1231">
+		<idioma identificador="1">
+			<texto>El valor mínimo es: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Minimum value is: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1232">
+		<idioma identificador="1">
+			<texto>Elemento mínimo: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Minimum element: </texto>
+		</idioma>
+	</entrada>
+		<entrada numero="1233">
+		<idioma identificador="1">
+			<texto>Imposible eliminar: montículo vacío </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to empty: empty tree yet </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1234">
+		<idioma identificador="1">
+			<texto>Contruir montículo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Build heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1235">
+		<idioma identificador="1">
+			<texto>Proceso de asignación de valores aleatorios</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Random value generation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1236">
+		<idioma identificador="1">
+			<texto>Introduzca número de elementos (2,31)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Introduce number of items (2,31)</texto>
+		</idioma>
+	</entrada>
+		<entrada numero="1237">
+		<idioma identificador="1">
+			<texto>Asignar valores</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Set values</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1238">
+		<idioma identificador="1">
+			<texto>cima-></texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>top-></texto>
+		</idioma>
+	</entrada>
+		<entrada numero="1239">
+		<idioma identificador="1">
+			<texto>Información</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="124">
+		<idioma identificador="1">
+			<texto>frente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>front</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1240">
+		<idioma identificador="1">
+			<texto>Número de valores:</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Number of values:</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1241">
+		<idioma identificador="1">
+			<texto>Montículo iniciado de forma desordenada</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Initiated heap of disordered form</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1242">
+		<idioma identificador="1">
+			<texto>Comienza el filtrado descendente</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>	The descending filtrate begins </texto>
+		</idioma>
+	</entrada>
+		<entrada numero="1243">
+		<idioma identificador="1">
+			<texto>Introduzca posición</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Enter position</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1244">
+		<idioma identificador="1">
+			<texto>(número entero positivo)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>(positive integer number)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1245">
+		<idioma identificador="1">
+			<texto>Incrementar clave</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Increase key</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1246">
+		<idioma identificador="1">
+			<texto>Introduzca incremento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Enter increase</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1247">
+		<idioma identificador="1">
+			<texto>Decrementar clave</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Decrease key </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1248">
+		<idioma identificador="1">
+			<texto>Introduzca decremento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Enter decrease</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1249">
+		<idioma identificador="1">
+			<texto>Ordenación por montículo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Heap Sort</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="125">
+		<idioma identificador="1">
+			<texto>Vaciado de montículo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Drained of heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1250">
+		<idioma identificador="1">
+			<texto>Se ha vaciado el montículo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The heap has drained </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1251">
+		<idioma identificador="1">
+			<texto>Imposible vaciar montículo: montículo ya vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Impossible to drain heap: already empty heap </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1252">
+		<idioma identificador="1">
+			<texto>Operación es vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Method is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1253">
+		<idioma identificador="1">
+			<texto>El montículo está vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The heap is empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1254">
+		<idioma identificador="1">
+			<texto>El montículo no está vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The heap is not empty</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1255">
+		<idioma identificador="1">
+			<texto>Aviso: imposible insertar, montículo lleno</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: it's impossible to insert, full heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1256">
+		<idioma identificador="1">
+			<texto>Obtenemos hueco para el nuevo elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>We obtain hollow for the new element</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1257">
+		<idioma identificador="1">
+			<texto>Se ha insertado valor i/2=</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Value has been inserted i/2=</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1258">
+		<idioma identificador="1">
+			<texto> en i=</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto> on i=</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1259">
+		<idioma identificador="1">
+			<texto>Aviso: imposible eliminar,montículo vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The code of the language is obligatory</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="126">
+		<idioma identificador="1">
+			<texto>Se elimina el mínimo, queda hueco libre</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>	The minimum is eliminated, there's a hollow free </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1260">
+		<idioma identificador="1">
+			<texto>Se ha insertado valor de hijo= </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Son value has been inserted= </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1261">
+		<idioma identificador="1">
+			<texto>Terminado filtrado descendente (i=</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Finished descendent filtrate (i= </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1262">
+		<idioma identificador="1">
+			<texto>Terminado filtrado ascendente(clave=</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Finished ascendent filtrate (key=</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1263">
+		<idioma identificador="1">
+			<texto>Terminado filtrado descendente(clave=</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Finished descendent filtratre(key=</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1264">
+		<idioma identificador="1">
+			<texto>Aviso: imposible eliminar, montículo vacío</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Warning: Impossible to remove, empty heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1265">
+		<idioma identificador="1">
+			<texto>Elemento</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Item</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1266">
+		<idioma identificador="1">
+			<texto>Resultado de la ordenación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>	Result of the arrangement </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1267">
+		<idioma identificador="1">
+			<texto>RESULTADO DE LA ORDENACION POR MONTICULO</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>RESULT OF THE HEAP ARRANGEMENT</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1268">
+		<idioma identificador="1">
+			<texto>TDA Grafo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Graph</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1269">
+		<idioma identificador="1">
+			<texto>Información sobre TDA Grafo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about TDA Graph</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="127">
+		<idioma identificador="1">
+			<texto>Diseñar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Design</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1270">
+		<idioma identificador="1">
+			<texto>Diseño del grafo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Graph design</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1271">
+		<idioma identificador="1">
+			<texto>Verificar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Check</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1272">
+		<idioma identificador="1">
+			<texto>Verificar que el grafo es correcto</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Check if the graph is correct</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1273">
+		<idioma identificador="1">
+			<texto>Ejecucion</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Run</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1274">
+		<idioma identificador="1">
+			<texto>Ejecucion paso a paso del algoritmo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Run algorithm</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1275">
+		<idioma identificador="1">
+			<texto>Recorrido</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Route</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1276">
+		<idioma identificador="1">
+			<texto>Recorrido del grafo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Graph route</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1277">
+		<idioma identificador="1">
+			<texto>Cancelar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Cancel</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1278">
+		<idioma identificador="1">
+			<texto>Cancelar todos los pasos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Cancel all steps</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1279">
+		<idioma identificador="1">
+			<texto>Orden topológico</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Topology order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="128">
+		<idioma identificador="1">
+			<texto>Camino mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Minimum way</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1280">
+		<idioma identificador="1">
+			<texto>Algoritmo de Dijkstra</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Dijkstra algorithm</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1281">
+		<idioma identificador="1">
+			<texto>¿Qué algoritmo desea simular?</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>What algorithm do you want to simulate?</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1282">
+		<idioma identificador="1">
+			<texto>Selección de algoritmo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Algorithm selection</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1284">
+		<idioma identificador="1">
+			<texto>Amplitud</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Amplitude</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1285">
+		<idioma identificador="1">
+			<texto>Profundidad</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Depth</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1286">
+		<idioma identificador="1">
+			<texto>¿Qué recorrido desea simular?</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>What route do you want to simulate?</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1287">
+		<idioma identificador="1">
+			<texto>Selección de recorrido</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Route selection</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1288">
+		<idioma identificador="1">
+			<texto>Encaminamiento OSPF</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>OSPF Routing</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1289">
+		<idioma identificador="1">
+			<texto>Información breve sobre OSPF</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about OSPF</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="129">
+		<idioma identificador="1">
+			<texto>Verificar que la red es correcta</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Check if the network is correct</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1290">
+		<idioma identificador="1">
+			<texto>Diseño de la red</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Network design</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1291">
+		<idioma identificador="1">
+			<texto>Ejecución paso a paso</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Run step by step</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1292">
+		<idioma identificador="1">
+			<texto>Ejecucion del algoritmo de Dijkstra</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Dijkstra algorithm run</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1293">
+		<idioma identificador="1">
+			<texto>Algoritmo de Dijkstra en ejecución:</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Dijkstra algorithm running: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1294">
+		<idioma identificador="1">
+			<texto>En esta iteración el vértice alcanzado es: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>On this step, reached vertex is:  </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1295">
+		<idioma identificador="1">
+			<texto>En esta iteración el vértice ordenado es: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>On this step, ordered vertex is: </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1296">
+		<idioma identificador="1">
+			<texto>Nodos rojos, indican nodos alcanzados (con distancia mínima)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Red nodes are reached nodes (with minimum distance)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1297">
+		<idioma identificador="1">
+			<texto>Nodos rojos indican nodos alcanzados (ordenados)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Red nodes are reached nodes (ordered nodes)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1298">
+		<idioma identificador="1">
+			<texto>Nodos rojos indican nodos alcanzados (recorridos)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Red nodes are reached nodes (routed nodes)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1299">
+		<idioma identificador="1">
+			<texto>Algoritmo Camino Mínimo en ejecución</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Minimum way algorithm running</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="13">
+		<idioma identificador="1">
+			<texto>Orden Topológico en ejecución</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Topology order running</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="130">
+		<idioma identificador="1">
+			<texto>Recorrido en profundidad en ejecución</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Depth route running</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1300">
+		<idioma identificador="1">
+			<texto>Recorrido en amplitud en ejecución</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Amplitud route running</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1301">
+		<idioma identificador="1">
+			<texto>Imposible realizar orden topológico: grafo cíclico</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Impossible to make topology order: cyclical graph</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1302">
+		<idioma identificador="1">
+			<texto>El algoritmo ha finalizado. Los nodos alcanzables</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The algorithm has finalized. Reachable nodes</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1303">
+		<idioma identificador="1">
+			<texto>con mínima distancia, están en color rojo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>with minimum distance, are in red color</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1304">
+		<idioma identificador="1">
+			<texto>El algoritmo ha finalizado. Los nodos ordenados</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The algorithm has finalized. Ordered nodes</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1305">
+		<idioma identificador="1">
+			<texto>están en color rojo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto> are in red color</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1306">
+		<idioma identificador="1">
+			<texto>Algoritmo del Orden Topológico</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Topology Order Algorithm</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1307">
+		<idioma identificador="1">
+			<texto>Algoritmo del Camino Mínimo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Minimum Way Algorithm</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1308">
+		<idioma identificador="1">
+			<texto>Recorrido en Profundidad</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Depth route</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="131">
+		<idioma identificador="1">
+			<texto>Recorrido en amplitud</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Amplitud route</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1311">
+		<idioma identificador="1">
+			<texto>Algoritmo de Dijkstra</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Dijkstra algorithm</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1312">
+		<idioma identificador="1">
+			<texto>Imposible guardar: grafo incorrecto</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to save: incorrect graph</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1313">
+		<idioma identificador="1">
+			<texto>El algoritmo ha finalizado. Los routers alcanzables</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Algorithm has finalized. Reached routers</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="132">
+		<idioma identificador="1">
+			<texto>con mínima distancia, están marcados</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>with minimum distance, are ticked</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1322">
+		<idioma identificador="1">
+			<texto>Algoritmo en ejecución: las líneas rojas son routers</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The algorithm is running: red lines are reached</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1323">
+		<idioma identificador="1">
+			<texto>alcanzados desde el router de comienzo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>routers from start router</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1324">
+		<idioma identificador="1">
+			<texto>Paso: </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Step:</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1325">
+		<idioma identificador="1">
+			<texto>Información OSPF</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information OSPF</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1326">
+		<idioma identificador="1">
+			<texto>Imposible guardar: red incorrecta</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Impossible to save: incorrect network</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1327">
+		<idioma identificador="1">
+			<texto>Velocidad</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Speed</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1328">
+		<idioma identificador="1">
+			<texto>Información sobre Bellman-Ford</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about Bellman-Ford</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1329">
+		<idioma identificador="1">
+			<texto>Crear red</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Create network</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="133">
+		<idioma identificador="1">
+			<texto>Generar pesos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Generate costs</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1330">
+		<idioma identificador="1">
+			<texto>Generar aleatoriamente los pesos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Generate costs randomly</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1331">
+		<idioma identificador="1">
+			<texto>Elegir encaminador</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Choose router</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1332">
+		<idioma identificador="1">
+			<texto>El nombre del área es obligatorio</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The name of the area is obligatory</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1333">
+		<idioma identificador="1">
+			<texto>Ejecución del algoritmo de Bellman-Ford</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Running of Bellman-Ford algorithm</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1334">
+		<idioma identificador="1">
+			<texto>Bellman-Ford</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Bellman-Ford</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1335">
+		<idioma identificador="1">
+			<texto>Siguiente paso...</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Next step...</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1336">
+		<idioma identificador="1">
+			<texto>Ejecutar el algoritmo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Running the algorithm</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1337">
+		<idioma identificador="1">
+			<texto>Enviando paquete de</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Sending package from</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1338">
+		<idioma identificador="1">
+			<texto>Enviando paquete ... </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Sending package ....</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1339">
+		<idioma identificador="1">
+			<texto>Inundación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Flooding</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="134">
+		<idioma identificador="1">
+			<texto>Información sobre inundación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Information about flooding</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1340">
+		<idioma identificador="1">
+			<texto>Origen</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Origin</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1341">
+		<idioma identificador="1">
+			<texto>Determinar nodo origen</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Set origin node</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1342">
+		<idioma identificador="1">
+			<texto>Inundación de la red</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Network flooding</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1343">
+		<idioma identificador="1">
+			<texto>Vida de los paquetes</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Package life</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1344">
+		<idioma identificador="1">
+			<texto>Español</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Spanish</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1345">
+		<idioma identificador="1">
+			<texto>Inglés</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>English</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1346">
+		<idioma identificador="1">
+			<texto>Idioma</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Language</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1347">
+		<idioma identificador="1">
+			<texto>Configuración</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Setting</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1348">
+		<idioma identificador="1">
+			<texto>Ejecución</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Running</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1349">
+		<idioma identificador="1">
+			<texto>Idioma</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Language</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="135">
+		<idioma identificador="1">
+			<texto>Simulación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1350">
+		<idioma identificador="1">
+			<texto>Aleatorio</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Random</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1351">
+		<idioma identificador="1">
+			<texto>Pila</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Stack</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1352">
+		<idioma identificador="1">
+			<texto>Cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Queue</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1353">
+		<idioma identificador="1">
+			<texto>Árbol Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Binary Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1354">
+		<idioma identificador="1">
+			<texto>Montículo Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Binary Heap</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1355">
+		<idioma identificador="1">
+			<texto>Grafo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Graph</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1356">
+		<idioma identificador="1">
+			<texto>OSPF</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>OSPF</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1357">
+		<idioma identificador="1">
+			<texto>Bellman-Ford</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Bellman-Ford</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1358">
+		<idioma identificador="1">
+			<texto>Árbol Binario Búsqueda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Binary Search Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1359">
+		<idioma identificador="1">
+			<texto>Árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>AVL Tree</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="136">
+		<idioma identificador="1">
+			<texto>Inundación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Flooding</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1360">
+		<idioma identificador="1">
+			<texto>Simulación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1361">
+		<idioma identificador="1">
+			<texto>Es una simulación de TDA Pila</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Stack simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1362">
+		<idioma identificador="1">
+			<texto>Es una simulación de TDA Cola</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Queue simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1363">
+		<idioma identificador="1">
+			<texto>Es una simulación de TDA Árbol Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Binary Tree simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1365">
+		<idioma identificador="1">
+			<texto>Es una simulación de TDA Árbol Binario Búsqueda </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Binary Search Tree simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1368">
+		<idioma identificador="1">
+			<texto>Es una simulación de TDA Árbol AVL</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA AVL Tree simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1369">
+		<idioma identificador="1">
+			<texto>ES una simulación de TDA Montículo Binario</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Binary Heap simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1370">
+		<idioma identificador="1">
+			<texto>Es una simulación de TDA Grafo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>TDA Graph simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1371">
+		<idioma identificador="1">
+			<texto>Es una simulación de OSPF</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>OSPF simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1372">
+		<idioma identificador="1">
+			<texto>Es una simulación de Bellman-Ford</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Bellman-Ford simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1373">
+		<idioma identificador="1">
+			<texto>Es una simulación de inundación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Flooding simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1374">
+		<idioma identificador="1">
+			<texto>No es una simulación RAED válida</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It isn't a RAED simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1375">
+		<idioma identificador="1">
+			<texto>Tipo de datos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Data type</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1376">
+		<idioma identificador="1">
+			<texto>Representación de Algoritmos de Estructuras de Datos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Data Structure Algorithm Representation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1377">
+		<idioma identificador="1">
+			<texto>Versión 1.0 Septiembre 2007</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Version 1.0 September 2007</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1378">
+		<idioma identificador="1">
+			<texto>Autor:</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Author:</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1379">
+		<idioma identificador="1">
+			<texto>Tutoras:</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Teachers:</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1380">
+		<idioma identificador="1">
+			<texto>María José Polo Martín - Profesora de la Universidad de Salamanca</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>María José Polo Martín - University of Salamanca Teacher</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1381">
+		<idioma identificador="1">
+			<texto>Ángeles María Moreno Montero - Profesora de la Universidad de Salamanca</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Ángeles María Moreno Montero - University of Salamanca Teacher</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1382">
+		<idioma identificador="1">
+			<texto>Información sobre el proyecto RAED</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>RAED Proyect Information</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1383">
+		<idioma identificador="1">
+			<texto>No hay red</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>There's no network</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1384">
+		<idioma identificador="1">
+			<texto>Información del Departamento</texto>
+			<ayuda>&lt;p&gt;Se muestra la información general del departamento. Dirección y cargos directivos.&lt;/p&gt;</ayuda>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Department Information</texto>
+			<ayuda>&lt;p&gt;Se muestra la información general del departamento. Dirección y cargos directivos.(inglés) &lt;/p&gt;</ayuda>
+		</idioma>
+	</entrada>
+	<entrada numero="1385">
+		<idioma identificador="1">
+			<texto>Imposible conectar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>It's impossible to connect</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1386">
+		<idioma identificador="1">
+			<texto>Gracias por usar RAED</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Thanks for using RAED</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1387">
+		<idioma identificador="1">
+			<texto>Hasta pronto</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>See you soon</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1388">
+		<idioma identificador="1">
+			<texto>Abrir archivo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Open file</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1389">
+		<idioma identificador="1">
+			<texto>Guardar archivo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Save file</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="139">
+		<idioma identificador="1">
+			<texto>Nueva simulación</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>New simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1390">
+		<idioma identificador="1">
+			<texto>Imprimir el dibujo </texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Print draw</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1391">
+		<idioma identificador="1">
+			<texto>Imprimir el texto</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Print text</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1392">
+		<idioma identificador="1">
+			<texto>Guardar ejecución</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Save simulation</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1393">
+		<idioma identificador="1">
+			<texto>Ayuda</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Help</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1394">
+		<idioma identificador="1">
+			<texto>Información RAED</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>RAED Information</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1395">
+		<idioma identificador="1">
+			<texto>El rango de enteros permitidos es (0,1000)</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Integer values must be on (0,1000)</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1396">
+		<idioma identificador="1">
+			<texto>Aceptar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Accept</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1397">
+		<idioma identificador="1">
+			<texto>Cancelar</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Cancel</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1398">
+		<idioma identificador="1">
+			<texto>Cargos Directivos que obstenta</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Managerial charges that the person have</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1399">
+		<idioma identificador="1">
+			<texto>Número de Orden</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Number of Order</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="14">
+		<idioma identificador="1">
+			<texto>Curriculum Profesores</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Teaching staff curricula</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1400">
+		<idioma identificador="1">
+			<texto>El nombre de la Categoría Profesional es obligatorio</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The name of the professional category is obligatory</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1401">
+		<idioma identificador="1">
+			<texto>La descripción de la Categoría Profesional es obligatoria</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The description of the professional category is obligatory</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1402">
+		<idioma identificador="1">
+			<texto>ERROR, esa categoría no existe en la base de datos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>MISTAKE, that category do not exist in the database</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1403">
+		<idioma identificador="1">
+			<texto>ERROR, existen personas con esa categoría</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>MISTAKE, there are personnel with that category</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1404">
+		<idioma identificador="1">
+			<texto>ERROR, ese cargo directivo no existe en la base de datos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>MISTAKE, that Managerial Charge do not exist in the database</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1405">
+		<idioma identificador="1">
+			<texto>El código del cargo directivo es obligatorio</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The code of the Managerial Charge is obligatory</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1406">
+		<idioma identificador="1">
+			<texto>ERROR, ese cargo personal no existe en la base de datos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>MISTAKE, that  Personal Charge do not exist in the database </texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1407">
+		<idioma identificador="1">
+			<texto>El código del cargo personal es obligatorio</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The code of the Personal Charge is obligatory</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1408">
+		<idioma identificador="1">
+			<texto>Identificador cargo</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Charge Identify</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="1409">
+		<idioma identificador="1">
+			<texto>La denominación del cargo es obligatoría</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>The denomination of the Charge is obligatory</texto>
+		</idioma>
+	</entrada>
+	<entrada numero="141">
+		<idioma identificador="1">
+			<texto>Plazos</texto>
+		</idioma>
+		<idioma identificador="2">
+			<texto>Deadlines</texto>
+		</idioma>
+	</entrada>
+</diccionario>
