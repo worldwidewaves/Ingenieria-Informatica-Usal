@@ -1,6 +1,7 @@
 # ESTRUCTURA DE DATOS Y ALGORÍTMOS II [(Google Drive)](https://drive.google.com/drive/u/0/folders/1SFqEo0f_5WLlTuv_YFaX4MJ5Q9lhwuSq)
 
 # Teoría
+## Introducción y Repaso
   - **Tema 0**: Presentación de la Asignatura
     - [Presentación](https://drive.google.com/open?id=19Ob8jzq0mq0MfXlHehlx8O5vshSVrR3l)
     - [Práctica Final Diseño de Bases de Datos]()
