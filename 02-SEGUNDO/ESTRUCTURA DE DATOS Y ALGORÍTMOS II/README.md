@@ -1,10 +1,11 @@
 # ESTRUCTURA DE DATOS Y ALGORÍTMOS II [(Google Drive)](https://drive.google.com/drive/u/0/folders/1SFqEo0f_5WLlTuv_YFaX4MJ5Q9lhwuSq)
 
-## Teoría
+# Teoría
+## Introducción y Repaso
   - **Tema 0**: Presentación de la Asignatura
     - [Presentación](https://drive.google.com/open?id=19Ob8jzq0mq0MfXlHehlx8O5vshSVrR3l)
     - [Práctica Final Diseño de Bases de Datos]()
-# Estructuras de Datos en Memoria Principal
+## Estructuras de Datos en Memoria Principal
   - **Tema 1**: Árboles Generales y Binarios
     - [Teoría](https://drive.google.com/open?id=1avWdYHCFGsOOS6Se7IxD4wAl9uKKGylJ)
     - [Prácticas](https://drive.google.com/open?id=1wA8uJrp-z4lqJUhu954R-UR20V-kjXdT)
@@ -28,7 +29,7 @@
     - [Ejempo Eliminación en Árboles Balanceados](https://drive.google.com/open?id=1dvHoDWu4r8G3IKye0iUychszMc19csfB)
     - [Prácticas](https://drive.google.com/open?id=1B64N91q55ugNBuHSHNWQhQqa6b5wexqh)
     - [Ficheros Auxiliares]()
-# Estructuras de Datos en Memoria Secundaria
+## Estructuras de Datos en Memoria Secundaria
   - **Tema 6**: Organización de Archivos
     - [Teoría](https://drive.google.com/open?id=1BHozTQBtH5vfcVj5-L2-q8MofIBz0Sp1)
     - [Prácticas](https://drive.google.com/open?id=14Zk3TQmj-UI24sY0RU_FmZfQGeRy92o_)
@@ -37,7 +38,7 @@
     - [Ficheros Auxiliares III: Organización Método Dispersión]()
   - **Tema 7**: Organización de Índices
     - [Teoría](https://drive.google.com/open?id=1eQEF3QiAUB22KIQZIetmprCi1Zv5jEy2)
-# Extra
+## Extra
   - **RAED**: Representación de Algoritmos de Estructuras de Datos
     - [Página Web](http://raed.usal.es/)
     - [Blog](http://avellano.fis.usal.es/~ciglesias/)
