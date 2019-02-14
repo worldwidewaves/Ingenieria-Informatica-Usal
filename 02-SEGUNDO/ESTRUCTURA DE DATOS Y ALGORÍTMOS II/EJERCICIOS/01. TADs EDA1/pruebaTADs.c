@@ -104,9 +104,37 @@ int sintaxis(char * expresion){
 //    de derecha a izquierda que de izquierda a derecha,
 //    utilizando TAD Pila y TAD Cola
 
-int palindromo(char *expresion)
-{ 
+int palindromo(char *expresion){ 
+   Pila miPila;
+   char c1, c2, finExp = '\0';
+   int i = 0;
 
+   pilaCreaVacia(&miPila);
+   
+   c1 = expresion[i];
+   while (c1 != finExp){
+      if (c1 != ' ')
+         pilaInserta(c1, &miPila);
+      i++;
+      c1 = expresion[i];
+   }
+
+   i = 0;
+   c1 = expresion[i];
+   while (c1 != finExp){
+      if (c1 != ' '){
+         c2 = pilaSuprime(&miPila);
+         if (c1 != c2)
+            return 0;
+      }
+      i++;
+      c1 = expresion[i];
+   }
+
+   if (!pilaVacia(&miPila))  
+      return 0;
+   else 
+      return 1;
 }
 // 3. Eliminación de elementos repetidos en una lista utilizando TAD Lista
 
