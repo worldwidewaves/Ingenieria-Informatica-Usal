@@ -19,7 +19,7 @@ Maldito Fourier.
   - **Tema 3**: Medios de Trasmisión
     - [Teoría](https://drive.google.com/open?id=1a-JMeRcb4MaoiDIJNPO3dQkVY7AqlJzP)
   - **Tema 4**: Sistemas de Comunicación Digital
-    - Teoría I: [Muestreo y PCM](https://drive.google.com/open?id=196iIEUonG-q-FxA3MYb5NPp9-wRWMOtH)(sí, pone Tema 3)
+    - Teoría I: [Muestreo y PCM](https://drive.google.com/open?id=196iIEUonG-q-FxA3MYb5NPp9-wRWMOtH) (sí, pone Tema 3)
     - Teoría II: [Velocidades y Sincronización](https://drive.google.com/open?id=1AL3G7mO9d4v8XxO3BI--N4OcaOAd2YAn)
     - Teoría III: [Tipos de Codificación Básicos](https://drive.google.com/open?id=13_oGoGRCEDzbGHPrFQ4-f1skBqoxXsZ8)
     - Teoría IV: [Otros Tipos de Codificación](https://drive.google.com/open?id=1K7fo6eXntnffgmyd-Uu7Czlvyoqg4u7a)
