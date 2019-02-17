@@ -138,7 +138,19 @@ int palindromo(char *expresion){
 }
 // 3. Eliminación de elementos repetidos en una lista utilizando TAD Lista
 
-int purga(Lista *l)
-{
+int purga(Lista *l){
+   tipoPosicion pos = primero(l), aComprobar;
+   aComprobar = siguiente(pos, l);
+   
+   while (aComprobar != fin(l)){
+      while (pos != fin(l)){
+         if (recupera(aComprobar, l) == recupera(pos, l))
+            suprime(aComprobar, l);
+         pos = siguiente(pos, l);
+      }
+      pos = primero(l);
+      aComprobar = siguiente(aComprobar, l);
+   }
 
+   return 0;
 }

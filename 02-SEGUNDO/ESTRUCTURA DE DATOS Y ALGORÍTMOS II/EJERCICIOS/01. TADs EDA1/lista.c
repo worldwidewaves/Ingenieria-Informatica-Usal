@@ -12,6 +12,7 @@ int creaVacia(Lista *l){
         return -1;
     else {
         l->raiz->sig = NULL;
+        l->ultimo->sig = NULL;
         return 0;
     }
 }
@@ -146,7 +147,7 @@ tipoPosicion siguiente(tipoPosicion p, Lista *l){
     tipoCeldaLista *anterior;
     
     if (l == NULL || l->raiz == NULL || p == NULL) {
-        return -1;
+        return NULL;
     }
 	else if (p == l->ultimo) {
 		return l->ultimo;
@@ -161,7 +162,7 @@ tipoPosicion localiza(tipoElementoLista x, Lista *l){
 	tipoPosicion q;
 	
 	if (l == NULL || l->raiz == NULL) {
-		return -1;
+		return NULL;
 	}
 	else {
 		q = l->raiz;
@@ -171,7 +172,7 @@ tipoPosicion localiza(tipoElementoLista x, Lista *l){
 			}
 			q = q->sig;
 		}
-		return q;
+		return NULL;
 	}
 }
 
