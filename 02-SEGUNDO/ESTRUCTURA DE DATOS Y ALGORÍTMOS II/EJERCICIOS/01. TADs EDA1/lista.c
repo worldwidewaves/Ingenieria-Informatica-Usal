@@ -136,9 +136,14 @@ int suprime(tipoPosicion p, Lista *l){
         return -1;
     }
     else {
+        if (p->sig == l->ultimo)
+            l->ultimo = p;
+
         aBorrar = p->sig;
         p->sig = aBorrar->sig;
         free(aBorrar);
+
+        return 0;
     }
 }
 
@@ -152,6 +157,9 @@ tipoPosicion siguiente(tipoPosicion p, Lista *l){
 	else if (p == l->ultimo) {
 		return l->ultimo;
 	}
+    else if (p->sig == NULL) {
+        return l->ultimo;
+    }
 	else {
         return p->sig;
     }

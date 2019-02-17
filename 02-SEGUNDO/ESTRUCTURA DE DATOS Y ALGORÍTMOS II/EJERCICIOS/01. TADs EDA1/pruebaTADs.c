@@ -42,12 +42,11 @@ int main(void)
      printf("Expresion; %s (NO es palindromo)\n", expresion);
 
 // 3. Prueba purga (TAD lista)
-
   Lista miLista;
   creaVacia(&miLista);
   // Insertamos 100 elementos (con valores entre 0 y 9 para que haya repetidos) 
   for (i=0;i<100;i++) 
-      inserta(rand()%10,fin(&miLista),&miLista);
+      inserta(rand()%10, fin(&miLista), &miLista);
   //  imprime(&miLista);
   purga(&miLista);	// Eliminamos los repetidos, quedarán 10!!
   imprime(&miLista);
@@ -100,10 +99,10 @@ int sintaxis(char * expresion){
    else 
       return 1;
 }
+
 // 2. Función que determina si una frase se lee igual 
 //    de derecha a izquierda que de izquierda a derecha,
 //    utilizando TAD Pila y TAD Cola
-
 int palindromo(char *expresion){ 
    Pila miPila;
    char c1, c2, finExp = '\0';
@@ -136,20 +135,24 @@ int palindromo(char *expresion){
    else 
       return 1;
 }
-// 3. Eliminación de elementos repetidos en una lista utilizando TAD Lista
 
+// 3. Eliminación de elementos repetidos en una lista utilizando TAD Lista
 int purga(Lista *l){
-   tipoPosicion pos = primero(l), aComprobar;
-   aComprobar = siguiente(pos, l);
+   tipoPosicion pos = primero(l);
+   tipoPosicion aComprobar = siguiente(pos, l);
+   tipoPosicion aBorrar;
    
-   while (aComprobar != fin(l)){
-      while (pos != fin(l)){
-         if (recupera(aComprobar, l) == recupera(pos, l))
-            suprime(aComprobar, l);
-         pos = siguiente(pos, l);
+   while (pos != fin(l)){
+      while (aComprobar != fin(l)){
+         if (recupera(aComprobar, l) == recupera(pos, l)){
+               aBorrar = aComprobar;
+               suprime(aBorrar, l);
+         }
+         else
+            aComprobar = siguiente(aComprobar, l);
       }
-      pos = primero(l);
-      aComprobar = siguiente(aComprobar, l);
+      pos = siguiente(pos, l);
+      aComprobar = siguiente(pos, l);
    }
 
    return 0;
