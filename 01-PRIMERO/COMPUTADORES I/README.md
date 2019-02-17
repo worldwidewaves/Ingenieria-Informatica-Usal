@@ -1,5 +1,11 @@
 # COMPUTADORES I [(Google Drive)](https://drive.google.com/drive/u/0/folders/1LgPKoXnWQWU3c8u68ZZynr4HKGNsXhW2)
 
+<p align="center">
+  <img src="img.jpg" width="600" height="400"/>
+</p>
+
+Pues eso.
+
 ## Teoría
   - [Clase](https://drive.google.com/open?id=1y5w0eFQYLPLx85sedizJE-4djR4KYnKx)
   
