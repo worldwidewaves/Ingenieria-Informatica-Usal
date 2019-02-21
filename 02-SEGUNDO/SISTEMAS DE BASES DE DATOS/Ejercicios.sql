@@ -101,6 +101,7 @@ show spool
 /*
 SESIÓN 2: Modificaciones de Información
 */
+set autocommit on
 
 /*
 01. Aumentar en 3 el número de ejemplares del libro con ISBN 5025496 para la
