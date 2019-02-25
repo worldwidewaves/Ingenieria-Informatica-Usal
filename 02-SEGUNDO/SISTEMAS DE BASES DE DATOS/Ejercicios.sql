@@ -199,3 +199,135 @@ where cod_suc = 2;
 /*
 11. Eliminar todos los préstamos de los lectores de la provincia de Zamora. 
 */
+
+/*
+SESIÓN 3: Administración
+*/
+set autocommit on
+
+/*
+01. Se ha observado que una parte importante de las consultas a la base de datos que
+    requieren mejorar su eficiencia acceden a los datos de la tabla LECTOR según el
+    valor de la PROVINCIA. ¿Qué podemos hacer para mejorar los tiempos de
+    respuesta de dichas consultas?
+*/
+create index LECTOR_PROVINCIA on LECTOR (provincia);
+
+/*
+02. Crear una vista para seleccionar los códigos de los préstamos activos (libros no
+    devueltos) junto a los códigos de los lectores.
+*/
+create view PRESTAMOS_ACTIVOS as select cod_lector, codigo from PRESTAMO where fecha_dev IS NULL;
+
+/*
+03. Crear una vista que liste los libros que se encuentran en la actualidad prestados,
+    incluyendo el ISBN y título. Generar dicha esta vista eliminando las filas
+    duplicadas.
+*/
+create view LIBROS_PRESTADOS as select distinct l.isbn, l.titulo from PRESTAMO p, LIBRO l where p.isbn = l.isbn and p.fecha_dev IS NULL;
+
+/*
+04. Crear una vista para el fondo de préstamo de la sucursal 3, indicando el ISBN, título
+    del libro y el número de ejemplares asignados y disponibles para dicha sucursal.
+*/
+create view FONDO_PRESTAMO_SUC3 as select l.isbn, l.titulo, d.num_ejemplares, d.num_disponibles from DISPONE d, LIBRO l where d.cod_suc = 3 and l.isbn = d.isbn;
+
+/*
+05. Crear una vista que liste todas las columnas de la tabla PRESTAMO para aquellos
+    prestamos finalizados en la sucursal 1.
+*/
+create view PRESTAMOS_FINALIZADOS_SUC1 as select * from PRESTAMO where cod_suc = 1 and fecha_dev IS NOT NULL;
+
+/*
+06. Usar la vista anterior para insertar una nueva tupla en la tabla PRESTAMO
+    correspondiente a un préstamo iniciado hoy y no finalizado de la sucursal 4.
+    Comprobar la diferencia de comportamiento si la vista está creada con la
+    claúsula WITH CHECK OPTION o no.
+*/
+insert into PRESTAMOS_FINALIZADOS_SUC1 values (10000, 15838332, 5025700, 4, sysdate, NULL);
+/* 
+Me deja meterlo pero al hacer un select sobre la vista no sale porque la vista está hecha
+sobre la sucursal 1 y esto es de la 4.
+*/
+drop view PRESTAMOS_FINALIZADOS_SUC1;
+create view PRESTAMOS_FINALIZADOS_SUC1 as select * from PRESTAMO where cod_suc = 1 and fecha_dev IS NOT NULL with check option;
+insert into PRESTAMOS_FINALIZADOS_SUC1 values (10000, 15838332, 5025700, 4, sysdate, NULL);
+/*
+La tupla no se inserta porque no cumple las condiciones de la vista.
+*/
+
+/*
+07. Modificar la vista anterior de forma que no pueda realizarse ninguna modificación
+    sobre ella. Intentar borrar con esa vista los préstamos finalizados hace más de 5
+    años. ¿Cuál es la salida?
+*/
+drop view PRESTAMOS_FINALIZADOS_SUC1;
+create view PRESTAMOS_FINALIZADOS_SUC1 as select * from PRESTAMO where cod_suc = 1 and fecha_dev IS NOT NULL with read only;
+delete from PRESTAMOS_FINALIZADOS_SUC1 where fecha_dev < sysdate - 365*5;
+
+/*
+08. Examínese la diferencia entre tener un privilegio sobre una tabla y tenerlo sobre una
+    vista definida sobre esa tabla. En especial, la manera en que un usuario puede tener
+    un privilegio (por ejemplo SELECT) sobre una vista sin tenerlo también sobre todas
+    las tablas subyacentes.
+*/
+/*
+Si damos privilegios a alguien a una vista de una tabla pero no a la tabla, la persona
+en cuestión podrá acceder a la vista pero no a la tabla.
+*/
+
+/*
+09. Crear un sinónimo para la tabla dispone y hacer uso de él para consultar un listado
+    por sucursal de los ISBN que tienen a su disposición.
+*/
+create synonym POMELO for DISPONE;
+select cod_sucursal, isbn from POMELO order by cod_sucursal;
+
+/*
+10. Un análisis de la base de datos muestra que es necesario añadir un campo más a la
+    tabla sucursal, para almacenar el nombre de la sucursal. Haga una copia de la tabla
+    sucursal y posteriormente, realice en esa tabla las operaciones necesarias para incluir
+    el nuevo dato.
+*/
+create table COPIA_SUCURSAL as select * from SUCURSAL;
+/*
+Por acabar.
+*/
+
+/*
+11. Se desea disponer de una nueva tabla AUTORESP que contenga información de los
+    autores de nacionalidad española. En esa tabla, cada autor tendrá un nuevo atributo
+    que llamaremos CodAutorEsp que será la clave primaria de esa tabla. El valor del
+    atributo CodAutorEsp no tiene por qué coincidir con el código que el autor tenga en
+    la tabla AUTOR. El valor de este código se generará de manera automática
+    mediante una secuencia.
+    a.  Crear la secuencia necesaria.
+    b.  Crear la tabla que contenga los siguientes atributos: CodAutorEsp,
+        Nombre, Apellido.
+    c.  Rellenar la nueva tabla con los datos de los escritores españoles que se
+        obtengan de la tabla AUTOR.
+*/
+
+/*
+12. Crear una relación ANUNCIO que permita que los distintos usuarios de la base de
+    datos inserten anuncios de cualquier tipo. El esquema de la relación será:
+    ANUNCIO (Codigo, autor, texto). El Código deberá ser único y creado
+    automáticamente mediante una secuencia. El atributo autor se rellenará por defecto
+    con el user de quien realice la inserción. Se darán permisos para que cualquier 
+    usuario pueda hacer insercciones y consultas en la tabla. Probar a insertar alguna
+    tupla en nuestra tabla y también en la creada por algún compañero.
+*/
+
+/*
+13. Crear una vista MISANUNCIOS que recupere los datos de los anuncios cuyo autor
+    coincida con el usuario que está consultando la vista. Dar los permisos adecuados a
+    dicha vista. Realizar las pruebas del funcionamiento de esta vista cooperando con un
+    compañero. Hay que recordar que varios usuarios pueden crear objetos con el
+    mismo nombre y que se puede acceder a los objetos creados por otros usuarios
+    mediante esquema.objeto, siendo esquema el usuario propietario del objeto.
+*/
+
+/*
+14. Eliminar todos los índices, vistas, tablas, sinónimos y secuencias creados en los
+    ejercicios anteriores.
+*/
