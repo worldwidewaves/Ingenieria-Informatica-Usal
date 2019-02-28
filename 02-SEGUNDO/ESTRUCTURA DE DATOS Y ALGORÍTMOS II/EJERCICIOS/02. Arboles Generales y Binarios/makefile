@@ -11,11 +11,11 @@ ejercicio1: ejercicio1.c arbol.o cola.o
 
 ejercicio3: ejercicio3.c arbol.o genArbol.o pila.o cola.o
 	gcc -g ejercicio3.c arbol.o genArbol.o pila.o cola.o -o ejercicio3
-arbol.o: arbol.h arbol.c 
+arbol.o: arbol.h arbol.c cola.h
 	gcc -c -g arbol.c 
-genArbol.o: genArbol.c  
+genArbol.o: genArbol.c genArbol.h arbol.h pila.h
 	gcc -c genArbol.c 
-cola.o: cola.h cola.c 
+cola.o: cola.h cola.c arbol.h
 	gcc -g -c cola.c
 pila.o: pila.c pila.h arbol.h
 	gcc -c pila.c
