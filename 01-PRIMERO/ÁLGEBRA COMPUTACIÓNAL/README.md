@@ -1,25 +1,23 @@
-# ÁLGEBRA LINEAL Y GEOMETRÍA [(Google Drive)](https://drive.google.com/drive/u/0/folders/1VbhuK_IOkayp7K5o7DebyamBOo2CdCup)
+# ÁLGEBRA COMPUTACIONAL [(Google Drive)](https://drive.google.com/drive/u/0/folders/1gmaJekqLIsRpILDihy30sAOVYuIdHu8R)
 
 <p align="center">
   <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/%C3%81LGEBRA%20LINEAL%20Y%20GEOMETR%C3%8DA/img.jpg" width="400" height="400"/>
 </p>
 
-Nadie sabe de qué repachingadas va esto.
-
-## Teoría
-  - [Teoría](https://drive.google.com/file/d/1_00X0oVFWlhz1PPiYHs0AUVSqFAGFPOj/view)
-  - [Espacio Euclideo](https://drive.google.com/file/d/1lFzKkzkmvn_i9nibo_HPxoi9SXK84j0J/view)
-
-## Ejercicios
-  - [Ejercicios Conjuntos](https://drive.google.com/file/d/1RoWH4C7bPhZNF8Ej5w51OwKAuWCBYdgw/view)
-  - [Ejercicios Espacios Vectoriales](https://drive.google.com/file/d/1fT6A0o6ql9W2QytOYyhZaPoWBEIraLVJ/view)
-  - [Problemas I](https://drive.google.com/file/d/1GjFeCKywrRw9uNIPMdo9VnOMbTZZALkA/view)
-  - [Problemas II](https://drive.google.com/file/d/1DQW6-0y0-4mk_gp_7dINGgUvj1Sh5xlL/view)
-  - [Problemas III (Seminarios)](https://drive.google.com/file/d/1wswaSWAWBF-AqZwtWExKV3H4z9fF2SQS/view)
+Nadie sabe de qué repachingadas va esto (2).
 
 ## Apuntes Cuaderno
-  - [Curso 2017-2018](https://drive.google.com/open?id=1odMOjAJi1flrGmM1MYE1LkBqeG0b-NeG)
-  
+  - [Curso 2017-2018](https://drive.google.com/file/d/1lYqOgAfbVqEgPQ4e1qHum9y920dqV-UM/view)
+
+## Problemas
+  - [Problemas 1](https://drive.google.com/file/d/11VqJRZkOBY8YAbTW4gKX0nPQVzVMvAIt/view)
+  - [Problemas 2](https://drive.google.com/file/d/171GmSGaTVOUZJNh994n1Mb9KcDrzj8NX/view)
+  - [Problemas 3](https://drive.google.com/file/d/1vCfRd9k_gyf5NjyW7dJ7DSsvuu1lIaqj/view)
+  - [Problemas 4](https://drive.google.com/file/d/1DN24AoTdxK5wu1I3V8EKbww86JDdwmYV/view)
+  - [Problemas 5](https://drive.google.com/file/d/1V9Ym2HGFfhCwWGDbLl4auCBUkUY0TVsG/view)
+
+
 ##  Exámenes
-  - [Primer Control 2017-2018](https://drive.google.com/open?id=1DwdlmmhWOsDFEpvlmpDNmNFytTdEepZz)
-  - [Segundo Control 2017-2018](https://drive.google.com/open?id=1k3XWGZSx97H1U7O8JPF5JlEQTmN51tdU)
+  - [Primer Control 2017-2018](https://drive.google.com/file/d/1s-4oZ1I7aeZWbpgWZ2fxiswmahLOoFnG/view)
+  - [Segundo Control 2017-2018](https://drive.google.com/file/d/11vwbT7g7pO0hX3YIdJ2THdfi72Z1k_6x/view)
+  - [Exámen Final 2017-2018](https://drive.google.com/file/d/1FTYLlRRNCySmbDYYv9DmSi8q0xB-oSV7/view)
