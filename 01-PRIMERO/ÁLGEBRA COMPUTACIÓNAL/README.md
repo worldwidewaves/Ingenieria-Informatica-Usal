@@ -1,7 +1,7 @@
 # ÁLGEBRA COMPUTACIONAL [(Google Drive)](https://drive.google.com/drive/u/0/folders/1gmaJekqLIsRpILDihy30sAOVYuIdHu8R)
 
 <p align="center">
-  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/%C3%81LGEBRA%20LINEAL%20Y%20GEOMETR%C3%8DA/img.jpg" width="400" height="400"/>
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/%C3%81LGEBRA%20COMPUTACI%C3%93NAL/img.jpeg" width="1000" height="300"/>
 </p>
 
 Nadie sabe de qué repachingadas va esto (2).
