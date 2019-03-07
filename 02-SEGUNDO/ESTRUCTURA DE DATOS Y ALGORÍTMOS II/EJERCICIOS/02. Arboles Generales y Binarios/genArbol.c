@@ -7,7 +7,7 @@ Arbol genArbol(char *exPostfija){
     char simbolo;
     pilaCreaVacia(&p);
     simbolo = exPostfija[0];
-    i = 1;
+    i = 0;
 
     while (simbolo != '\0'){
         switch (simbolo){
@@ -16,6 +16,16 @@ Arbol genArbol(char *exPostfija){
             case 'C':
             case 'D':
             case 'E':
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
                 a = creaNodo(simbolo);
                 pilaInserta(a, &p);
                 break;
@@ -39,9 +49,9 @@ int evaluar(Arbol a){
     if (a->info == '+')
         return (evaluar(a->izq) + evaluar(a->der));
     if (a->info == '-')
-        return (evaluar(a->izq) + evaluar(a->der));
+        return (evaluar(a->izq) - evaluar(a->der));
     if (a->info == '*')
-        return (evaluar(a->izq) + evaluar(a->der));
+        return (evaluar(a->izq) * evaluar(a->der));
 
     return (a->info - 48);  // 48 = Código ASCII del 0
 }

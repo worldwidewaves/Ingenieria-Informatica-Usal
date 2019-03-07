@@ -109,7 +109,7 @@ int numNodosHoja(Arbol raiz){
 }
 
 int numNodosInternos(Arbol raiz){
-  return numNodos(raiz) - numNodosHoja(raiz) - 1;
+  return numNodos(raiz) - numNodosHoja(raiz);
 }
 
 int sustituye(Arbol raiz, tipoInfo viejo, tipoInfo nuevo){

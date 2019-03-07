@@ -331,3 +331,141 @@ Por acabar.
 14. Eliminar todos los índices, vistas, tablas, sinónimos y secuencias creados en los
     ejercicios anteriores.
 */
+
+/*
+SESIÓN 4: Disparadores
+*/
+
+/*
+01. Se desea llevar un control de las actualizaciones que se realizan sobre una base de
+    datos que está compuesta por las siguientes tablas:
+        PROYECTO (COD_PROY, NOMBRE, PRESUPUESTO)
+        DEPARTAMENTO (COD_DPTO, NOMBRE, DIRECCION, NUM_EMPLEADOS)
+    Para ello, se crea una tabla donde se registrará cada acción que se realice sobre las
+    tablas anteriores. Dicha tabla tendrá el siguiente esquema:
+        REGISTRO (ID, FECHA, USUARIO, TABLA, COD_ITEM, ACCION)
+    En la tabla REGISTRO se incluirá una tupla por cada acción que se realice en las
+    tablas anteriores y que contendrá los siguientes atributos:
+    - ID. Será la clave de la tabla registro y se gestionará automáticamente mediante
+      un disparador que obtenga el valor correspondiente a partir de una secuencia.
+    - Fecha en la que se ha realizado la modificación
+    - Usuario que ha realizado la acción
+    - Nombre de la tabla modificada (PROYECTO o DEPARTAMENTO)
+    - Clave de la tupla insertada, cambiada o borrada
+    - Acción que se ha realizado (INSERT, UPDATE o DELETE)
+    a) Crear las tres tablas indicadas y los disparadores necesarios para registrar los
+       datos de modificación de las tablas.
+    b) Insertar, modificar y borrar varias tuplas en las tablas PROYECTO y
+       DEPARTAMENTO y consultar el contenido de la tabla REGISTRO para
+       comprobar que los disparadores han funcionado correctamente.
+*/
+create table PROYECTO (
+    COD_PROY integer not null primary key,
+    NOMBRE varchar(20) not null,
+    PRESUPUESTO decimal(8,2)
+);
+
+create table DEPARTAMENTO (
+    COD_DEPTO integer not null primary key,
+    NOMBRE varchar(20) not null,
+    DIRECCION varchar(20),
+    NUM_EMPLEADOS integer default 0 not null
+);
+
+create table REGISTRO (
+    ID integer not null primary key,
+    FECHA date default sysdate,
+    USUARIO varchar(20) not null,
+    TABLA varchar(20) not null check (TABLA='PROYECTO' or TABLA='DEPARTAMENTO'),
+    COD_ITEM integer not null,
+    ACCION varchar(1) check (ACCION='I' or ACCION='U' or ACCION='D') not null
+);
+
+create sequence CLAVE_REG;
+
+create trigger CLAVEREGISTRO
+before insert on REGISTRO
+for each row
+BEGIN
+select clave_reg.NEXTVAL into :NEW.id from DUAL;
+END;
+
+create trigger INS_PROY
+after insert on PROYECTO
+for each row
+BEGIN
+insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) values (user, 'PROYECTO', new.cod_proy, 'I');
+END;
+
+create trigger DEL_PROY
+after delete on PROYECTO
+for each row
+BEGIN
+insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) values (user, 'PROYECTO', :old.cod_proy, 'D');
+END;
+
+create trigger UPD_PROY
+after update on PROYECTO
+for each row
+BEGIN
+/*
+aaaaaaaaaaaaaa
+*/
+END;
+
+
+select * from DEPARTAMENTO;
+
+/*
+02. Crear una nueva tabla EMPLEADO (DNI, NOMBRE, APELLIDO, COD_DEPTO).
+    Crear los disparadores precisos para que el atributo derivado NUM_EMPLEADOS
+    de la tabla DEPARTAMENTO se mantenga consistente con el contenido de la tabla
+    EMPLEADOS de modo automático. Comprobar el funcionamiento de los
+    disparadores en los siguientes casos:
+    - Se insertan varios empleados en distintos departamentos
+    - Se cambia el departamento al que está asignado un empleado
+    - Se elimina un usuario
+    - Se eliminan varios usuarios
+    - Se inserta un empleado sin departamentos asignado y posteriormente se
+      modifica para asignarlo a un departamento existente
+    - Se modifica un empleado asignado a un departamento para que deje de estar
+      asignado a ninguno
+*/
+
+/*
+03. Crear dos tablas con los mismos esquemas de las tablas DISPONE y la tabla
+    PRESTAMO de la base de datos usada en las prácticas (no es necesario definir en
+    ellas las claves externas correspondientes al resto de las tablas de la base de datos
+    de prácticas). Crear los disparadores necesarios para que el atributo derivado
+    NUM_DISPONIBLES de la tabla creada a imagen de DISPONE se mantenga
+    consistente de manera automática.
+    Se desea impedir que en la tabla creada a imagen de PRESTAMO se realicen
+    modificaciones sobre las columnas ISBN o COD_SUC. Crear un disparador que
+    garantice que no se producirán modificaciones de este tipo.
+*/
+create table COPIA_DISPONE as select * from DISPONE;
+create table COPIA_PRESTAMO as select * from PRESTAMO;
+create trigger 
+
+/*
+04. La biblioteca desea incentivar los hábitos de lectura de sus socios estableciendo una
+    clasificación de los mismos en función del número de prestamos que han realizado.
+    Solo se incluirán en la clasificación aquellos lectores que hayan realizado como
+    mínimo 10 préstamos. En el caso de que varios lectores coincidan con el mismo nº
+    de prestamos, se les asignarán números consecutivos en la clasificación sin importar
+    el criterio. Para ello, se desea crear una tabla que contenga las siguientes columnas:
+    nº de orden en la clasificación a fecha de hoy, código del lector y nº de prestamos
+    realizados.
+    a. Crear la tabla anterior tomando como clave primaria el nº de orden en la
+       clasificación.
+    b. Crear una secuencia que se utilizará para obtener los valores de la clave
+       primaria de la tabla anterior.
+    c. Crear un trigger que genere de forma automática durante la inserción los
+       valores para la clave de la tabla.
+    d. Rellenar la tabla con los valores correspondientes a partir del contenido
+       de la Base de Datos en el momento actual.
+*/
+
+/*
+05. Eliminar todos los objetos de la base de datos creados a lo largo de esta sesión.
+*/
