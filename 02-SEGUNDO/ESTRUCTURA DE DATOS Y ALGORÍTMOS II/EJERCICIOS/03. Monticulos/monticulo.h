@@ -3,16 +3,17 @@
 typedef int tipoClave ;
 typedef int tipoInfo ;
 
-typedef struct{ 
+typedef struct { 
   tipoClave clave;
   tipoInfo  informacion;
 } tipoElemento;
 
-typedef struct{
+typedef struct {
   tipoElemento elemento[MAXIMO];
   int tamanno;
 } Monticulo;
 
+void imprimirMonticulo(Monticulo m);
 
 /* Ejercicio 1 */
 
@@ -34,4 +35,7 @@ int esMonticulo(Monticulo m);
 
   void crearMonticulo(Monticulo *m);
 
-
+void heapsort(Monticulo *m);
+void heapSort0(Monticulo *m);
+void heapSort1(int *vector, int N);
+void heapSort2(int *vector, int N);
