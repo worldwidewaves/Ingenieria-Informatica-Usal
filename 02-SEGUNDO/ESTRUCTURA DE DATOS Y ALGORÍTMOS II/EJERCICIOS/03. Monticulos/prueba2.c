@@ -12,10 +12,14 @@ int main(void){
   for (i = 1; i <= n; i++)
     m.elemento[i].clave = rand()%100;
 
+  printf("Inicialmente (NO montículo):\n");
+  imprimirMonticulo(m);
+
+  printf("\nTras heapsort (SÍ montículo):\n");
   heapsort(&m);
-  for (i = 1; i <= m.tamanno; i++)
-    printf("%d ", m.elemento[i].clave);
-  printf("\n");
+  imprimirMonticulo(m);
+
+  return 0;
 }
 
 

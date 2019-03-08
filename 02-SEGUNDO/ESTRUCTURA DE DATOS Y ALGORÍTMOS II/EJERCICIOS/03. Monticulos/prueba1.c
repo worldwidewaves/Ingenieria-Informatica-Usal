@@ -16,15 +16,10 @@ int main(void){
     elemento.clave = rand()%100;
     i = insertar(elemento, &m);
   }
-
-  for (i = 1; i <= m.tamanno; i++)
-    printf("%d ", m.elemento[i].clave);
-  printf("\n");
+  imprimirMonticulo(m);
 
   decrementarClave(6, 10, &m);
-  for (i = 1; i <= m.tamanno; i++)
-    printf("%d ", m.elemento[i].clave);
-  printf("\n");
+  imprimirMonticulo(m);
 
   return 0;
 }

@@ -16,10 +16,15 @@ int vacioMonticulo(Monticulo m){
 
 void imprimirMonticulo(Monticulo m){
     int i;
-    printf("\nM(%d) : ", m.tamanno);
-    for (i = 0; i <= m.tamanno; i++)
-        printf("(%d)-", m.elemento[i].clave);
-    printf("\n");
+    printf("M(%2d) : ", m.tamanno);
+    for (i = 1; i <= m.tamanno - 1; i++)
+        printf("(%2d)-", m.elemento[i].clave);
+    printf("(%2d)\n", m.elemento[i].clave);
+
+    printf("  pos : ");
+    for (i = 1; i <= m.tamanno - 1; i++)
+        printf(" %.2d -", i);
+    printf(" %.2d \n", i);
 }
 
 int insertar(tipoElemento x, Monticulo *m){
@@ -37,25 +42,21 @@ int insertar(tipoElemento x, Monticulo *m){
 }
 
 int eliminarMinimo(Monticulo *m, tipoElemento *minimo){
-    tipoElemento ultimo, min;
-    int i, finFiltrado, hijo;
     if (vacioMonticulo(*m)){
         printf("Montículo Vacío\n");
         return -1;
     } else {
-        *(minimo) = min = m->elemento[1];
-        ultimo = m->elemento[m->tamanno];
-        m->elemento[1] = ultimo;
+        *minimo = m->elemento[1];
+        m->elemento[1] = m->elemento[m->tamanno];
         m->tamanno = m->tamanno - 1;
-        i = 1;
-        filtradoDescendente(m, i); 
+        filtradoDescendente(m, 1); 
     }
 }
 
 void decrementarClave(int pos, tipoClave cantidad, Monticulo *m){
     int i;
     m->elemento[pos].clave -= cantidad;
-    i=pos;
+    i = pos;
     filtradoAscendente(m, i);
 }
 
@@ -81,7 +82,7 @@ int esMonticulo(Monticulo m){
    que se basan todos los algoritmos que manejan montículos */
 
 void filtradoAscendente(Monticulo *m, int i){
-    tipoElemento x = (m->elemento[i]);
+    tipoElemento x = m->elemento[i];
     while (m->elemento[i/2].clave > x.clave && (i > 1)){
         m->elemento[i] = m->elemento[i/2];
         i = i/2;
@@ -92,7 +93,7 @@ void filtradoAscendente(Monticulo *m, int i){
 void filtradoDescendente(Monticulo *m, int i){
     int hijo, finFiltrado = 0;
     tipoElemento ultimo = m->elemento[i];
-    while ((2*i <= m->tamanno) && (!(finFiltrado))){
+    while ((2*i <= m->tamanno) && !finFiltrado){
         hijo = 2*i;
         if (hijo != m->tamanno)
             if (m->elemento[hijo + 1].clave < m->elemento[hijo].clave)
@@ -103,6 +104,7 @@ void filtradoDescendente(Monticulo *m, int i){
         } else
             finFiltrado = 1;
     }
+    m->elemento[i] = ultimo;
 }
 
 /* Operación crearMonticulo la utilizaremos en ejercicio 2 y en tema de grafos */ 
@@ -118,8 +120,10 @@ void heapsort(Monticulo *m){
     int i;
     Monticulo o;
     iniciaMonticulo(&o);
+    // Creamos Montículo o con elementos de m pero ordenados
     for (i = 1; i <= m->tamanno; i++)
         insertar(m->elemento[i], &o);
+    // Pasamos esos elementos al Montículo m ya ordenados empezando por el primero (y los eliminamos del Montículo o)
     for (i = 1; i <= m->tamanno; i++)
         eliminarMinimo(&o, &m->elemento[i]);
 }
