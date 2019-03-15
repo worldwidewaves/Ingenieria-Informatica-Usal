@@ -45,11 +45,12 @@ void amplitud(Arbol raiz){
 //
 void preOrden(Arbol raiz){ 
   if (raiz != NULL){
-    printf("%c ",raiz->info);
+    printf("%d ",raiz->info);
     preOrden(raiz->izq);
     preOrden(raiz->der);
   }
 }
+
 void enOrden(Arbol raiz){ 
   if (raiz != NULL){
     enOrden(raiz->izq);
@@ -57,6 +58,7 @@ void enOrden(Arbol raiz){
     enOrden(raiz->der);
   }
 }
+
 void postOrden(Arbol raiz){ 
   if (raiz != NULL){
     postOrden(raiz->izq);
@@ -138,4 +140,37 @@ int numHijoUnico(Arbol raiz){
   }
 
   return contador;
+}
+
+Arbol buscarMax(Arbol raiz){
+  Arbol max, maxI, maxD;
+  if (raiz != NULL){
+      max = raiz;
+      maxI = buscarMax(raiz->izq);
+      maxD = buscarMax(raiz->der);
+      if (maxI != NULL && maxI->info > max->info)
+        max = maxI;
+      if (maxD != NULL && maxD->info > max->info)
+        max = maxD;
+
+      return max;
+  }
+  return NULL;
+}
+
+
+Arbol buscarMin(Arbol raiz){
+  Arbol min, minI, minD;
+  if (raiz != NULL){
+      min = raiz;
+      minI = buscarMin(raiz->izq);
+      minD = buscarMin(raiz->der);
+      if (minI != NULL && minI->info < min->info)
+        min = minI;
+      if (minD != NULL && minD->info < min->info)
+        min = minD;
+
+      return min;
+  }
+  return NULL;
 }

@@ -1,10 +1,7 @@
-/*
-PRÁCTICAS SISTEMAS DE BASES DE DATOS
-*/
+--* PRÁCTICAS SISTEMAS DE BASES DE DATOS
 
-/*
-SESIÓN 1: Introducción
-*/ 
+
+--* SESIÓN 1: Introducción
 
 /*
 01. Mandar los resultados de realizar la siguiente consulta a un fichero de cola al que
@@ -98,9 +95,9 @@ show spool
     conoce la fecha de nacimiento o defunción de los autores.
 */
 
-/*
-SESIÓN 2: Modificaciones de Información
-*/
+
+--* SESIÓN 2: Modificaciones de Información
+
 set autocommit on
 
 /*
@@ -200,9 +197,9 @@ where cod_suc = 2;
 11. Eliminar todos los préstamos de los lectores de la provincia de Zamora. 
 */
 
-/*
-SESIÓN 3: Administración
-*/
+
+--* SESIÓN 3: Administración
+
 set autocommit on
 
 /*
@@ -332,9 +329,8 @@ Por acabar.
     ejercicios anteriores.
 */
 
-/*
-SESIÓN 4: Disparadores
-*/
+
+--* SESIÓN 4: Disparadores
 
 /*
 01. Se desea llevar un control de las actualizaciones que se realizan sobre una base de
@@ -468,4 +464,92 @@ create trigger
 
 /*
 05. Eliminar todos los objetos de la base de datos creados a lo largo de esta sesión.
+*/
+
+
+--* SESIÓN 5: PL/SQL
+
+set serveroutput on
+
+/*
+01. Escribir un bloque PL/SQL que calcule la media de tres números y saque el
+    resultado por pantalla.
+*/
+DECLARE
+    a number;
+    b number;
+    c number;
+BEGIN
+    a := 1;
+    b := 2;
+    c := 3;
+    dbms_output.put_line('Media de a = ' || a || ', b = ' || b || ' y c = ' || c || ' es: ' || (a+b+c)/3);
+END;
+/
+
+/*
+02. Escribir un bloque en PL/SQL que acceda a la base de datos UNIV y saque por
+    pantalla los datos del autor MARIO VARGAS LLOSA. Realice el tratamiento de
+    errores necesario.
+*/
+DECLARE
+    nombre autor.nombre%TYPE;
+    apellido autor.apellido%TYPE;
+    pais nacionalidad.nombre%TYPE;
+    fecha_nac autor.ano_nac%TYPE;
+    fecha_fall autor.ano_fall%TYPE;
+BEGIN
+    select a.nombre, a.apellido, a.ano_nac, a.ano_fall, n.nombre
+    into nombre, apellido, fecha_nac, fecha_fall, pais
+    from AUTOR a, NACIONALIDAD n
+    where a.nombre = 'MARIO' and a.apellido = 'VARGAS LLOSA' and n.codigo = a.cod_nacion;
+    dbms_output.put_line(nombre || ' ' || apellido || ' nacio en ' || pais || ' en ' || fecha_nac);
+    if fecha_fall is NULL then
+        dbms_output.put_line('Y continua vivo');
+    else 
+        dbms_output.put_line('Y falleció en: ' || fecha_fall);
+    end if;
+END;
+/
+
+/*
+03. Escribir un bloque PL/SQL que muestre por pantalla el número total de libros,
+    autores, editoriales, sucursales y lectores que hay en la base de datos UNIV.
+    a. Realice el tratamiento de errores necesario.
+    b. En caso de que el número de lectores supere en un 20% al número de
+       libros. Sacar un mensaje por pantalla que indique “Aumentar fondo de
+       préstamo”.
+*/
+/*
+DECLARE
+    num_libros number;
+    num_autores number;
+    num_editoriales number;
+    num_sucursales number;
+    num_lectores number;
+BEGIN
+    num_libros := select sum(LIBRO);
+    dbms_output.put_line(num_libros);
+END;
+/
+/*
+/*
+04. Se desea llevar un control de las actualizaciones que se realizan sobre una base de
+    datos que está compuesta por las siguientes tablas:
+    PROYECTO (COD_PROY, NOMBRE, PRESUPUESTO)
+    DEPARTAMENTO (COD_DPTO, NOMBRE, DIRECCION, NUM_EMPLEADOS)
+    Para ello, se crea una tabla donde se registrará cada acción que se realice sobre las
+    tablas anteriores. Dicha tabla tendrá el siguiente esquema:
+    REGISTRO (ID, FECHA, USUARIO, TABLA, COD_ITEM, ACCION)
+    En la tabla REGISTRO se incluirá una tupla por cada acción que se realice en las
+    tablas anteriores y que contendrá los siguientes atributos:
+    - Fecha en la que se ha realizado la modificación
+    - Usuario que ha realizado la acción
+    - Nombre de la tabla modificada (PROYECTO o DEPARTAMENTO)
+    - Clave de la tupla insertada, cambiada o borrada
+    - Acción que se ha realizado (INSERT, UPDATE o DELETE)
+    Una vez creadas las tablas, crear mediante los mecanismos de control del PL/SQL
+    los dos disparadores necesarios para registrar los datos de modificación en cada una
+    de las tablas PROYECTO y DEPARTAMENTO. Consultar el contenido de la tabla
+    REGISTRO para comprobar que los disparadores han funcionado correctamente.
 */

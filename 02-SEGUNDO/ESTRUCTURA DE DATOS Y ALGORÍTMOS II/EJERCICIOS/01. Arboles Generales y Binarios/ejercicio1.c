@@ -4,9 +4,9 @@
 #include "arbol.h"
 
 int main(void){
-  Arbol varArbol;
+ /* Arbol varArbol;
 
-/* Creación arbol ejemplo de las transparencias de recorridos */
+// Creación arbol ejemplo de las transparencias de recorridos
   varArbol = creaNodo('A');
   varArbol->izq = creaNodo('B');
   varArbol->der = creaNodo('C');
@@ -15,7 +15,7 @@ int main(void){
   varArbol->der->izq = creaNodo('F');
   varArbol->der->der = creaNodo('G');
 
-/* Aplicación de recorridos al arbol ejemplo */
+// Aplicación de recorridos al arbol ejemplo
 
   printf("Recorrido en PRE_ORDEN: ");
   preOrden(varArbol);
@@ -33,7 +33,7 @@ int main(void){
   amplitud(varArbol);
   printf("\n");
 
-/* Comenzar a implementar y probar las funciones del ejercicio 2 ... y segunda parte del ejercicio 3 */
+// Comenzar a implementar y probar las funciones del ejercicio 2 ... y segunda parte del ejercicio 3
   printf("ALTURA: ");
   printf("%d", altura(varArbol));
   printf("\n");
@@ -66,9 +66,22 @@ int main(void){
   varArbol = anula(varArbol);
   enOrden(varArbol);
   printf("\n");
+*/
+// Poner "typedef int tipoInfo" en arbol.h para usar int's en vez de char's
+  
+  Arbol varArbolNum;
 
+  varArbolNum = creaNodo(18);
+  varArbolNum->izq = creaNodo(12);
+  varArbolNum->der = creaNodo(32);
+  varArbolNum->izq->izq = creaNodo(13);
+  varArbolNum->izq->der = creaNodo(45);
+  varArbolNum->der->izq = creaNodo(2);
+  varArbolNum->der->der = creaNodo(31);
 
-
+  printf("MÁX: %d\n", buscarMax(varArbolNum)->info);
+  printf("MIN: %d\n", buscarMin(varArbolNum)->info);
+  
   return 1;
 }
 
