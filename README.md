@@ -13,6 +13,7 @@ Cálculo | [Estructura de Datos y Algorítmos II](https://github.com/su1c1d3jerk
 Organización y Gestión de Empresas | Ingeniería del Software I
 [Programación II](https://github.com/Z41D3L/ingenieria-informatica/tree/master/01-PRIMERO/PROGRAMACI%C3%93N%20II) | Sistemas Operativos II
 Computadores II | Informática Teórica
+| [Introducción a la Inteligencia Artificial]()
 
 <img src="https://i.imgur.com/vN5jG9r.gif" width="1000" height="500" />
 
