@@ -13,7 +13,7 @@ Todos los trabajos, programas y demás pochedades de la carrera ( ͡° ͜ʖ ͡°
 | Organización y Gestión de Empresas | Ingeniería del Software I
 | [Programación II](https://github.com/Z41D3L/ingenieria-informatica/tree/master/01-PRIMERO/PROGRAMACI%C3%93N%20II) | Sistemas Operativos II
 | Computadores II | Informática Teórica
-|| [Introducción a la Inteligencia Artificial]()
+|| [Introducción a la Inteligencia Artificial](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/02-SEGUNDO/INTRODUCCI%C3%93N%20A%20LA%20INTELIGENCIA%20ARTIFICIAL)
 
 <img src="https://i.imgur.com/vN5jG9r.gif" width="1000" height="500" />
 
