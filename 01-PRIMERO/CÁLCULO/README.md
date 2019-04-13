@@ -1,10 +1,10 @@
-# ÁLGEBRA LINEAL Y GEOMETRÍA [(Google Drive)](https://drive.google.com/drive/u/0/folders/1VbhuK_IOkayp7K5o7DebyamBOo2CdCup)
+# CÁLCULO [(Google Drive)](https://drive.google.com/drive/u/0/folders/1VirDEdtVLTCFU3I60m_lratvpOfGTgc9)
 
 <p align="center">
-  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/%C3%81LGEBRA%20LINEAL%20Y%20GEOMETR%C3%8DA/img.jpg" width="400" height="400"/>
+  <img src="" width="400" height="400"/>
 </p>
 
-Nadie sabe de qué repachingadas va esto.
+.
 
 ## Teoría
   - [Teoría](https://drive.google.com/file/d/1_00X0oVFWlhz1PPiYHs0AUVSqFAGFPOj/view)
