@@ -50,5 +50,5 @@ int main(void){
 
     // ¿Qué operación sería necesaria para relacionar el elemento 12 con el 15?
 
-    return 0;
+    return 0;baste
 }

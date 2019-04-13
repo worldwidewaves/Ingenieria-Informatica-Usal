@@ -14,7 +14,7 @@
         d. Verificar que tenemos un archivo *.lst generado
 */
 spool ej1
-select nombre, ape_1, ape_2 from lector, prestamo where lector.provincia='SALAMANCA' and cod_lector=lector.codigo and to_char(fecha_ini,'yyyy')=2011;
+select distinct nombre, ape_1, ape_2 from LECTOR, PRESTAMO where lector.poblacion = 'SALAMANCA' and cod_lector = lector.codigo and to_char(fecha_ini, 'yyyy') = 2011;
 spool off
 show spool
 
@@ -25,7 +25,7 @@ show spool
 */
 spool ej2
 set echo off
-select * from prestamo order by cod_suc, fecha_ini;
+select * from PRESTAMO order by cod_suc, fecha_ini;
 spool off
 show spool
 
@@ -39,7 +39,7 @@ su fecha de nacimiento o de muerte. Para ello será necesario
     c. Verificar que se ha creado correctamente el archivo generado
        nombre.sql
 */
-select * from autor where ano_nac is NULL or ano_fall is NULL;
+select * from AUTOR where ano_nac is NULL or ano_fall is NULL;
 save ej3
 show spool
 
@@ -55,9 +55,10 @@ start ej3
     con los que cuenta la sucursal 1, 2 y 3 ordenados por ISBN y por sucursal,
     estableciendo pausas para su mejor visualización a través del comando pause.
 */
-set pause on
 spool ej5
-select l.isbn, cod_suc as Sucursal, titulo from libro l, dispone d where l.isbn=d.isbn and cod_suc in (1,2,3) order by l.isbn, cod_suc;
+set pause 'Pulse una tecla para continuar'
+set pause on
+select l.isbn, cod_suc as Sucursal, titulo from LIBRO l, DISPONE d where l.isbn = d.isbn and cod_suc in (1,2,3) order by l.isbn, cod_suc;
 spool off
 show spool
 
@@ -67,13 +68,23 @@ show spool
     por ISBN, estableciendo pausas para su mejor visualización a través del comando
     pause.
 */
-75, 81 resultados
+spool ej6
+set pause 'Pulse una tecla para continuar'
+set pause on
+select l.isbn, titulo from LIBRO l, DISPONE d where l.isbn = d.isbn and cod_suc = &1 order by l.isbn;
+spool off
+show spool
 
 /*
 07. Sacar la información de todos los autores de los que o bien no se conoce su fecha de
     nacimiento o de muerte indicando además su nacionalidad y no el código de ésta.
 */
-59 resultados
+spool ej7
+select a.nombre, apellido, ano_nac, ano_fall, nacionalidad.nombre
+from AUTOR a, NACIONALIDAD n where a.cod_nacion = n.codigo
+and (ano_fall is null or ano_nac is null);
+spool off
+show spool
 
 /*
 08. Ejecutaremos la consulta anterior con un formato que genere una salida más legible:
@@ -89,11 +100,53 @@ show spool
         g. Formatee la nacionalidad empleando NACION como título y fijando la
             longitud de los datos en 15 caracteres.
 */
+spool ej8
+set pagesize 50
+set linesize 80
+ttitle 'INFORME DE AUTORES |CON FECHAS NO CONOCIDAS'
+btitle 'SERVICIO DE BIBLIOTECAS'
+column nombre format a12
+column apellido format a12
+column ano_nac wrap heading 'ANO|NACIMIENTO'
+column ano_fall wrap heading 'ANO|MUERTE'
+set pause 'Una tecla...'
+set pause on
+column nombre format a15 heading 'NACION'
+select a.nombre, apellido, ano_nac, ano_fall, n.nombre
+from AUTOR a, NACIONALIDAD n where a.cod_nacion = n.codigo
+and (ano_fall is null or ano_nac is null);
+ttitle off
+btitle off
+clear columns
+set pause off
+spool off
+show spool
 
 /*
 09. Volver a realizar la consulta anterior insertando ‘???’ en los lugares donde no se
     conoce la fecha de nacimiento o defunción de los autores.
 */
+spool ej9
+set pagesize 50
+set linesize 80
+ttitle 'INFORME DE AUTORES |CON FECHAS NO CONOCIDAS'
+btitle 'SERVICIO DE BIBLIOTECAS'
+column nombre format a12
+column apellido format a12
+column ano_nac wrap heading 'ANO|NACIMIENTO' NULL '????'
+column ano_fall wrap heading 'ANO|MUERTE' NULL '????'
+set pause 'Una tecla...'
+set pause on
+column nombre format a15 heading 'NACION'
+Select a.nombre, apellido, ano_nac, ano_fall, n.nombre
+from AUTOR a, NACIONALIDAD n where a.cod_nacion = n.codigo
+and (ano_fall is null or ano_nac is null);
+ttitle off
+btitle off
+clear columns
+set pause off
+spool off
+show spool
 
 
 --* SESIÓN 2: Modificaciones de Información
@@ -104,15 +157,15 @@ set autocommit on
 01. Aumentar en 3 el número de ejemplares del libro con ISBN 5025496 para la
     sucursal 9. Comprobar que la actualización ha sido correcta.
 */
-update dispone
-set num_ejemplares = num_ejemplares + 3, licornum_disponibles = num_disponibles + 3
+update DISPONE
+set num_ejemplares = num_ejemplares + 3, num_disponibles = num_disponibles + 3
 where ISBN = 5025496 and cod_suc = 9;
 
 /*
 02. El lector con código 7395860 ha cambiado su dirección a la C/Sevilla, 1 de
     Aldeadávila en la provincia de Salamanca. Actualice sus datos en la base de datos.
 */
-update lector
+update LECTOR
 set direccion = 'C/Sevilla, 1', poblacion = 'Aldeadávila', provincia = 'SALAMANCA'
 where codigo = 7395860;
 
@@ -120,7 +173,7 @@ where codigo = 7395860;
 03. Actualizar la tabla SUCURSAL la sucursal con código 15 para que pase a estar
     ubicada en la ciudad de SEGOVIA con dirección en C/ SAN AGUSTÍN, 10.
 */
-update sucursal
+update SUCURSAL
 set direccion = 'C/San Agustín, 10', poblacion = 'Segovia', provincia = 'SEGOVIA'
 where codigo = 15;
 
@@ -129,10 +182,10 @@ where codigo = 15;
     Alemania, 49, Miajadas, Cáceres y Daoiz y Velarde, 24, Benavente, Zamora,
     respectivamente.
 */
-update lector
+update LECTOR
 set direccion = 'Av. de Alemania, 49', poblacion = 'Miajadas', provincia = 'CACERES'
 where codigo = 71259836;
-update lector
+update LECTOR
 set direccion = 'Daoiz y Velarde, 24', poblacion = 'Benavente', provincia = 'ZAMORA'
 where codigo = 94246322;
 
@@ -143,38 +196,38 @@ where codigo = 94246322;
     2001. Realizar su inserción en el sistema añadiendo los datos correspondientes en
     todas las tablas que sea necesario.
 */
-insert into autor (codigo, nombre, apellido, ano_nac, cod_nacion) values (159, 'JAVIER', 'MORO', 1955, 9);
-insert into escribe values (159, 8408104829);
-insert into editorial values (12, 'PLANETA');
-insert into libro values (8408104829, 'EL PREMIO ERES TU', 2011, 12);
-insert into dispone values (1, 8408104829, 1, 1);
-insert into dispone values (2, 8408104829, 1, 1);
-insert into dispone values (3, 8408104829, 1, 1);
-insert into dispone values (4, 8408104829, 1, 1);
-insert into dispone values (5, 8408104829, 1, 1);
-insert into dispone values (6, 8408104829, 1, 1);
-insert into dispone values (7, 8408104829, 1, 1);
-insert into dispone values (8, 8408104829, 1, 1);
-insert into dispone values (9, 8408104829, 1, 1);
-insert into dispone values (10, 8408104829, 1, 1);
-insert into dispone values (11, 8408104829, 1, 1);
-insert into dispone values (12, 8408104829, 1, 1);
-insert into dispone values (13, 8408104829, 1, 1);
-insert into dispone values (14, 8408104829, 1, 1);
-insert into dispone values (15, 8408104829, 1, 1);
+insert into AUTOR (codigo, nombre, apellido, ano_nac, cod_nacion) values (159, 'JAVIER', 'MORO', 1955, 9);
+insert into ESCRIBE values (159, 8408104829);
+insert into EDITORIAL values (12, 'PLANETA');
+insert into LIBRO values (8408104829, 'EL PREMIO ERES TU', 2011, 12);
+insert into DISPONE values (1, 8408104829, 1, 1);
+insert into DISPONE values (2, 8408104829, 1, 1);
+insert into DISPONE values (3, 8408104829, 1, 1);
+insert into DISPONE values (4, 8408104829, 1, 1);
+insert into DISPONE values (5, 8408104829, 1, 1);
+insert into DISPONE values (6, 8408104829, 1, 1);
+insert into DISPONE values (7, 8408104829, 1, 1);
+insert into DISPONE values (8, 8408104829, 1, 1);
+insert into DISPONE values (9, 8408104829, 1, 1);
+insert into DISPONE values (10, 8408104829, 1, 1);
+insert into DISPONE values (11, 8408104829, 1, 1);
+insert into DISPONE values (12, 8408104829, 1, 1);
+insert into DISPONE values (13, 8408104829, 1, 1);
+insert into DISPONE values (14, 8408104829, 1, 1);
+insert into DISPONE values (15, 8408104829, 1, 1);
 
 /*
 06. Añadir una nueva sucursal en la ciudad de Soria, en la dirección “Calle de los
     Caballeros, 32”. Esta sucursal tendrá asociado el código 16.
 */
-insert into sucursal (codigo, direccion, poblacion, provincia) values (16, 'Calle de los Caballeros, 32', 'Soria', 'SORIA');
+insert into SUCURSAL (codigo, direccion, poblacion, provincia) values (16, 'Calle de los Caballeros, 32', 'Soria', 'SORIA');
 
 /*
 07. La nueva sucursal creada en la ciudad de Soria en el ejercicio anterior, se dota con
     los mismos ejemplares que tiene la sucursal 2.
 */
-insert into dispone select 16, ISBN, num_ejemplares, num_disponibles from dispone
-where cod_suc = 2;
+insert into DISPONE (select s.codigo, ISBN, num_ejemplares, num_disponibles from SUCURSAL s, DISPONE d
+where s.codigo = 16 and d.cod_suc = 2);
 
 /*
 08. El lector Francisco Roldán se ha dado de baja en la biblioteca, por tanto debe ser
@@ -182,23 +235,61 @@ where cod_suc = 2;
     que tengan que ver con ese alumno en todas las tablas y además en el orden
     adecuado).
 */
+delete from PRESTAMO where codigo = (select codigo from LECTOR where nombre = 'FRANCISCO' and ape_1 = 'ROLDAN');
+delete from LECTOR where nombre = 'FRANCISCO' and ape_1 = 'ROLDAN';
 
 /*
 09. Incrementar en dos unidades disponibles por sucursal el libro del que más préstamos
     se realizan.
 */
+UPDATE DISPONE
+set num_ejemplares = num_ejemplares + 2, num_disponibles = num_disponibles + 2
+where ISBN in (select ISBN from PRESTAMO p group by ISBN having count(*) = (select max(count(*)) from PRESTAMO group by ISBN));
 
 /*
 10. Realizar un incremento en 1 ejemplar en todas las sucursales de aquellos libros para
     los se han contabilizado más de 4 préstamos.
 */
+/* Este enunciado se puede interpretar de distintas formas: */
+/*  - Primera Interpretación - 
+  La interpretación más simple sería considerar que si un libro se ha prestado más de cuatro veces en el conjunto de todas las sucursales
+  se debe incrementar en una unidad los ejemplares asignados de dicho libro en cualquiera (todas y cada una) de las sucursales que lo tuvieran.
+  Con esta interpretación, la solución sería:
+*/
+UPDATE DISPONE
+set num_ejemplares = num_ejemplares + 1, num_disponibles = num_disponibles + 1
+where ISBN in (select ISBN from PRESTAMO p group by ISBN having count(*) > 4);
+
+/*  - Segunda Interpretación - 
+  Otra posibilidad un poco más elaborada sería considerar que solo se desea incrementar en 1 el número de ejemplares de un libro 
+  si ese libro ha sido prestado más de cuatro veces al menos en una sucursal. Es decir, no basta con haber tenido más de cuatro préstamos 
+  en total contando los prestamos del conjunto de las sucursales, sino que tiene que haber  sido prestado más de 4 veces en, al menos,
+  una sucursal. Si se cumple esa condición, se incrementará en 1 el número de ejemplares de ese libro pero en todas las sucursales
+  que ya lo tuvieran (tanto en las que tuviera más de cuatro préstamos como en las que hubiera tenido menos).
+  Con esta interpretación, la solución sería:
+*/
+UPDATE DISPONE
+set num_ejemplares = num_ejemplares + 1, num_disponibles = num_disponibles + 1
+where ISBN in (select ISBN from PRESTAMO p group by cod_suc, ISBN having count(*) > 4);
+
+/*  - Tercera Interpretación - 
+  La última posibilidad, que es la más compleja, sería considerar que solo se desea incrementar en 1 el número de ejemplares de un libro 
+  en aquellas sucursales en las que el libro haya sido prestado más de 4 veces. Por tanto, a diferencia de los casos anteriores, el número
+  de ejemplares de un mismo libro puede incrementarse en una sucursal y no hacerlo en otra.
+  Con esta interpretación, la solución sería:
+*/
+UPDATE dispone
+set num_ejemplares = num_ejemplares + 1, num_disponibles = num_disponibles + 1
+where exists (select * from PRESTAMO p where ISBN = dispone.ISBN and cod_suc = dispone.cod_suc group by cod_suc, ISBN having count(*) > 4);
+
 
 /*
 11. Eliminar todos los préstamos de los lectores de la provincia de Zamora. 
 */
+delete from PRESTAMO where codigo in (select codigo from LECTOR where poblacion = 'ZAMORA');
 
 
---* SESIÓN 3: Administración
+--* SESIÓN 3: Índices, Vistas, Sinónimos y Secuencias
 
 set autocommit on
 
@@ -242,6 +333,8 @@ create view PRESTAMOS_FINALIZADOS_SUC1 as select * from PRESTAMO where cod_suc =
     claúsula WITH CHECK OPTION o no.
 */
 insert into PRESTAMOS_FINALIZADOS_SUC1 values (10000, 15838332, 5025700, 4, sysdate, NULL);
+select * from PRESTAMOS_FINALIZADOS_SUC1 where codigo = 10000; /* No recupera nada */
+select * from PRESTAMO where codigo = 10000; /* Sí recupera la tupla insertada */
 /* 
 Me deja meterlo pero al hacer un select sobre la vista no sale porque la vista está hecha
 sobre la sucursal 1 y esto es de la 4.
@@ -261,6 +354,7 @@ La tupla no se inserta porque no cumple las condiciones de la vista.
 drop view PRESTAMOS_FINALIZADOS_SUC1;
 create view PRESTAMOS_FINALIZADOS_SUC1 as select * from PRESTAMO where cod_suc = 1 and fecha_dev IS NOT NULL with read only;
 delete from PRESTAMOS_FINALIZADOS_SUC1 where fecha_dev < sysdate - 365*5;
+/* Al intentar hacer el delete se obtiene un mensaje de error que indica que no es posible hacer ese borrado */
 
 /*
 08. Examínese la diferencia entre tener un privilegio sobre una tabla y tenerlo sobre una
@@ -268,6 +362,16 @@ delete from PRESTAMOS_FINALIZADOS_SUC1 where fecha_dev < sysdate - 365*5;
     un privilegio (por ejemplo SELECT) sobre una vista sin tenerlo también sobre todas
     las tablas subyacentes.
 */
+/* Creamos una tabla cualquiera, por ejemplo una tabla que sea copia de alguna de las de la base de datos                                 */
+create table XXX as select * from libro;
+/* creamos una vista que use esa tabla                                                                                                    */
+create view UNAVISTA as select * from XXX;
+/* autorizamos a un compañero o a todo el mundo a hacer consultas sobre la vista                                                          */
+grant select on UNAVISTA to public;
+/* ahora, cuando la persona autorizada intente consultar la tabla xxx no podrá hacerlo, pero sí podrá consultar la vista unavista         */
+/* recuérdese que quien quiera acceder a la vista o tabla que hemos creado deberá preceder el nombre del objeto con el de nuestro usuario */
+/* por ejemplo: select * from OPS$Ixxxxxxx.UNAVISTA;                                                                                      */
+/* para saber qué usuario somos: select user from DUAL;                                                                                   */
 /*
 Si damos privilegios a alguien a una vista de una tabla pero no a la tabla, la persona
 en cuestión podrá acceder a la vista pero no a la tabla.
@@ -287,9 +391,7 @@ select cod_sucursal, isbn from POMELO order by cod_sucursal;
     el nuevo dato.
 */
 create table COPIA_SUCURSAL as select * from SUCURSAL;
-/*
-Por acabar.
-*/
+alter table COPIA_SUCURSAL add nombre varchar(20);
 
 /*
 11. Se desea disponer de una nueva tabla AUTORESP que contenga información de los
@@ -304,6 +406,15 @@ Por acabar.
     c.  Rellenar la nueva tabla con los datos de los escritores españoles que se
         obtengan de la tabla AUTOR.
 */
+create sequence CLAVE_AUTORESP;
+
+create table AUTORESP (
+CodAutorEsp		integer not null primary key,
+Nombre			VARCHAR(50),
+Apellido		VARCHAR(50));
+
+insert into AUTORESP select CLAVE_AUTORESP.nextval, nombre, apellido from AUTOR 
+where cod_nacion = (select codigo from NACIONALIDAD where nombre = 'ESPANA');
 
 /*
 12. Crear una relación ANUNCIO que permita que los distintos usuarios de la base de
@@ -314,6 +425,20 @@ Por acabar.
     usuario pueda hacer insercciones y consultas en la tabla. Probar a insertar alguna
     tupla en nuestra tabla y también en la creada por algún compañero.
 */
+create sequence CLAVE_ANUNCIO;
+grant all on CLAVE_ANUNCIO to public;
+
+create table ANUNCIO (
+codigo integer not null primary key,
+autor  varchar(20) default user,
+texto  varchar (30));
+
+grant all on ANUNCIO to public;
+
+insert into ANUNCIO (codigo, texto) values (CLAVE_ANUNCIO.nextval, 'vendo moto barata');
+insert into ANUNCIO (codigo, texto) values (CLAVE_ANUNCIO.nextval, 'se pasan trabajos a ordenador');
+
+insert into otrousuario.ANUNCIO (codigo, texto) values (otrousuario.CLAVE_ANUNCIO.nextval, 'compro libros antiguos');
 
 /*
 13. Crear una vista MISANUNCIOS que recupere los datos de los anuncios cuyo autor
@@ -323,12 +448,32 @@ Por acabar.
     mismo nombre y que se puede acceder a los objetos creados por otros usuarios
     mediante esquema.objeto, siendo esquema el usuario propietario del objeto.
 */
+create view MISANUNCIOS as select * from ANUNCIO where autor = user;
+grant select on MISANUNCIOS to public;
+
+select * from MISANUNCIOS;
+select * from ANUNCIO;
+/*  Si en nuestra tabla, además de nosotros ha insertado tuplas algún compañero, los resultados de las consulta a la vista 
+	misanuncios serán distintos de los de la consulta a la tabla anuncio */
 
 /*
 14. Eliminar todos los índices, vistas, tablas, sinónimos y secuencias creados en los
     ejercicios anteriores.
 */
-
+drop index LECTOR_PROVINCIA;
+drop view PRESTAMOS_ACTIVOS;
+drop view LIBROS_PRESTADOS;
+drop view FONDO_PRESTAMO_SUC3;
+drop view PRESTAMOS_FINALIZADOS_SUC1;
+drop view UNAVISTA;
+drop table XXX;
+drop synonym POMELO;
+drop table COPIA_SUCURSAL;
+drop table AUTORESP;
+drop view MISANUNCIOS;
+drop table ANUNCIO;
+drop sequence CLAVE_AUTORESP;
+drop sequence CLAVE_ANUNCIO;
 
 --* SESIÓN 4: Disparadores
 
@@ -372,9 +517,9 @@ create table REGISTRO (
     ID integer not null primary key,
     FECHA date default sysdate,
     USUARIO varchar(20) not null,
-    TABLA varchar(20) not null check (TABLA='PROYECTO' or TABLA='DEPARTAMENTO'),
+    TABLA varchar(20) not null check (TABLA = 'PROYECTO' or TABLA = 'DEPARTAMENTO'),
     COD_ITEM integer not null,
-    ACCION varchar(1) check (ACCION='I' or ACCION='U' or ACCION='D') not null
+    ACCION varchar(1) check (ACCION = 'I' or ACCION = 'U' or ACCION = 'D') not null
 );
 
 create sequence CLAVE_REG;
@@ -385,13 +530,15 @@ for each row
 BEGIN
 select clave_reg.NEXTVAL into :NEW.id from DUAL;
 END;
+/
 
 create trigger INS_PROY
 after insert on PROYECTO
 for each row
 BEGIN
-insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) values (user, 'PROYECTO', new.cod_proy, 'I');
+insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) values (user, 'PROYECTO', :new.cod_proy, 'I');
 END;
+/
 
 create trigger DEL_PROY
 after delete on PROYECTO
@@ -399,18 +546,60 @@ for each row
 BEGIN
 insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) values (user, 'PROYECTO', :old.cod_proy, 'D');
 END;
+/
 
 create trigger UPD_PROY
 after update on PROYECTO
 for each row
 BEGIN
-/*
-aaaaaaaaaaaaaa
-*/
+insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) VALUES (user, 'PROYECTO', :old.cod_proy, 'U');
 END;
+/
 
+create trigger INS_DPT
+after insert on DEPARTAMENTO 
+for each row
+BEGIN
+insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) VALUES (user, 'DEPARTAMENTO', :new.cod_dpto, 'I');
+END;
+/
 
-select * from DEPARTAMENTO;
+create trigger DEL_DPT
+after delete on DEPARTAMENTO 
+for each row
+BEGIN
+insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) VALUES (user, 'DEPARTAMENTO', :old.cod_dpto, 'D');
+END;
+/
+
+create trigger UPD_DPT
+after update on DEPARTAMENTO 
+for each row
+BEGIN
+insert into REGISTRO (USUARIO, TABLA, COD_ITEM, ACCION) VALUES (user, 'DEPARTAMENTO', :old.cod_dpto, 'U');
+END;
+/
+
+/* SENTENCIAS PARA PROBAR EL FUNCIONAMIENTO DE LOS DISPARADORES ANTERIORES */
+
+insert into PROYECTO values (100, 'PUENTE', 25000);
+update PROYECTO set presupuesto = presupuesto * 1.1 where cod_proy = 100;
+insert into PROYECTO values (200, 'PLAZA', 50000);
+delete from PROYECTO where cod_proy = 200;
+
+insert into DEPARTAMENTO values (33, 'INFORMATICA', 'GRAN VIA 23', 0);
+update DEPARTAMENTO set direccion = 'GRAN VIA 55' where cod_dpto = 33;
+insert into DEPARTAMENTO values (77, 'CONTABILIDAD', 'PLAZA DEL OESTE 23', 0);
+delete from DEPARTAMENTO where cod_dpto = 33;
+
+/* Probamos que se registran correctamente las eliminaciones de varias tuplas hechas en una �nica sentencia */
+insert into PROYECTO values (250, 'CASA GRANDE', 15000);
+insert into PROYECTO values (300, 'ROTONDA', 26000);
+insert into PROYECTO values (350, 'CAMINO', 32000);
+insert into PROYECTO values (400, 'ACERA', 18000);
+delete from PROYECTO where cod_proy > 300;
+
+select * from REGISTRO;
 
 /*
 02. Crear una nueva tabla EMPLEADO (DNI, NOMBRE, APELLIDO, COD_DEPTO).
@@ -427,6 +616,74 @@ select * from DEPARTAMENTO;
     - Se modifica un empleado asignado a un departamento para que deje de estar
       asignado a ninguno
 */
+create table EMPLEADO 
+(DNI integer not null primary key, 
+ NOMBRE varchar (20),
+ APELLIDO varchar (30),
+ COD_DEPTO integer references DEPARTAMENTO);
+ 
+create trigger INS_EMP
+after insert on EMPLEADO 
+for each row
+when (new.cod_depto is not null)
+BEGIN
+update DEPARTAMENTO set num_empleados = num_empleados + 1 where cod_dpto = :new.cod_depto;
+END;
+/
+
+create trigger DEL_EMP
+after delete on EMPLEADO 
+for each row
+when (old.cod_depto is not null)
+BEGIN
+update DEPARTAMENTO set num_empleados = num_empleados - 1 where cod_dpto = :old.cod_depto;
+END;
+/
+
+create trigger UPD_EMP
+after update of cod_depto on EMPLEADO 
+for each row
+when (new.cod_depto is not null or old.cod_depto is not null)
+BEGIN
+update DEPARTAMENTO set num_empleados = num_empleados + 1 where cod_dpto = :new.cod_depto;
+update DEPARTAMENTO set num_empleados = num_empleados - 1 where cod_dpto = :old.cod_depto;
+END;
+/
+
+/* Sentencias para probar estos disparadores */
+
+/* Creamos tres departamentos sin empleados */
+insert into DEPARTAMENTO values (33, 'INFORMATICA', 'GRAN VIA 23', 0);
+insert into DEPARTAMENTO values (53, 'ANALISIS', 'PLAZA DE CUBA 18', 0);
+insert into DEPARTAMENTO values (83, 'VENTAS', 'CALLE ANCHA 35', 0);
+
+/* Insertamos 5 nuevos empleados, 2 para uno de los departamentos y tres para otro */
+insert into EMPLEADO values (123456, 'PATRICIA', 'PEREZ', 33);
+insert into EMPLEADO values (456789, 'RAMIRO', 'RODRIGUEZ', 33);
+insert into EMPLEADO values (147258, 'MARTA', 'MARTIN', 53);
+insert into EMPLEADO values (258369, 'SERGIO', 'SERRANO', 53);
+insert into EMPLEADO values (963741, 'BELEN', 'BENITO', 53);
+
+/* Comprobamos que se han actualizado los números de empleados en la tabla DEPARTAMENTO */
+select * from DEPARTAMENTO;
+
+/* Cambiamos a un empleado de departamento */
+update EMPLEADO set cod_depto = 83 where dni = 147258;
+select * from DEPARTAMENTO;
+
+/* Borramos un empleado */
+delete from EMPLEADO where dni = 963741;
+select * from DEPARTAMENTO;
+
+/* Prueba con un empleado que no se asigna a ningún departamento y luego se modifica para asignarlo a uno */
+insert into EMPLEADO values (1564862, 'ALBERTO', 'ALVAREZ', null);
+select * from DEPARTAMENTO;
+
+update EMPLEADO set cod_depto = 83 where dni = 1564862;
+select * from DEPARTAMENTO;
+
+update EMPLEADO set cod_depto = null where dni = 1564862;
+select * from DEPARTAMENTO;
 
 /*
 03. Crear dos tablas con los mismos esquemas de las tablas DISPONE y la tabla
@@ -439,9 +696,78 @@ select * from DEPARTAMENTO;
     modificaciones sobre las columnas ISBN o COD_SUC. Crear un disparador que
     garantice que no se producirán modificaciones de este tipo.
 */
-create table COPIA_DISPONE as select * from DISPONE;
-create table COPIA_PRESTAMO as select * from PRESTAMO;
-create trigger 
+create table MI_DISPONE (
+Cod_Suc integer not null ,  
+ISBN varchar(10) not null, 
+Num_Ejemplares integer, 
+Num_Disponibles integer,
+primary key (Cod_Suc, ISBN),
+check (Num_Disponibles <= Num_Ejemplares AND Num_Disponibles >= 0 AND Num_Ejemplares >= 0)
+);
+
+create table MI_PRESTAMO (
+Codigo integer not null primary key, 
+Cod_Lector integer not null, 
+ISBN varchar(10) not null, 
+Cod_Suc integer not null, 
+Fecha_Ini date not null, 
+Fecha_Dev date,
+foreign key (Cod_Suc, ISBN) references mi_dispone (Cod_Suc, ISBN)
+);
+
+/* Rellenamos inicialmente las tablas con los mismos datos de las tablas DISPONE y PRESTAMO originales */
+
+insert into MI_DISPONE select * from DISPONE;
+insert into MI_PRESTAMO select * from PRESTAMO;
+
+/* Triggers para el mantenimiento del atributo derivado NUM_DISPONIBLES de MI_DISPONE */
+
+create or replace trigger INS_MIPRES
+after insert on MI_PRESTAMO 
+for each row
+when (new.fecha_dev is null)
+BEGIN
+update MI_DISPONE set num_disponibles = num_disponibles - 1 where ISBN = :new.ISBN and cod_suc = :new.cod_suc;
+END;
+/
+
+create or replace trigger DEL_MIPRES
+after delete on MI_PRESTAMO 
+for each row
+when (old.fecha_dev is null)
+BEGIN
+update MI_DISPONE set num_disponibles = num_disponibles + 1 where ISBN = :old.ISBN and cod_suc = :old.cod_suc;
+END;
+/
+
+create or replace trigger UPD_FDEV_MIPRES
+after update of FECHA_DEV on MI_PRESTAMO 
+for each row
+when (old.fecha_dev is null and new.fecha_dev is not null)
+BEGIN
+update MI_DISPONE set num_disponibles = num_disponibles + 1 where ISBN = :old.ISBN and cod_suc = :old.cod_suc;
+END;
+/
+
+create or replace trigger UPD_MIPRES
+after update of COD_SUC, ISBN on MI_PRESTAMO 
+for each row
+BEGIN
+raise_application_error(-20000, 'OPERACION NO PERMITIDA');
+END;
+/
+
+
+/* Comprobamos el funcionamiento de los triggers  simulando prestamos y devoluciones de libros */
+select * from MI_DISPONE where cod_suc = 17 and isbn = '5023876';
+insert into MI_PRESTAMO values (919191, 123, '5023876', 17, sysdate, null);
+select * from MI_DISPONE where cod_suc = 17 and isbn = '5023876';
+
+update MI_PRESTAMO set fecha_dev = sysdate where codigo = 919191;
+select * from MI_DISPONE where cod_suc = 17 and isbn = '5023876';
+
+delete from MI_PRESTAMO where codigo = 919191;
+select * from MI_DISPONE where cod_suc = 17 and isbn = '5023876';
 
 /*
 04. La biblioteca desea incentivar los hábitos de lectura de sus socios estableciendo una
@@ -461,10 +787,57 @@ create trigger
     d. Rellenar la tabla con los valores correspondientes a partir del contenido
        de la Base de Datos en el momento actual.
 */
+create table CLASIFICACION (
+posicion integer not null primary key,
+cod_lector integer not null references lector,
+num_prestamos integer not null check (num_prestamos >= 10));
+
+create sequence SEQ_CLAS;
+
+create or replace trigger TRIG_CLAS
+before insert on clasificacion 
+for each row
+begin
+select seq_clas.NEXTVAL into :NEW.posicion from DUAL;
+end;
+/
+
+insert into CLASIFICACION (cod_lector, num_prestamos)
+select cod_lector, count(*) from PRESTAMO
+group by cod_lector
+having count(*) >= 10
+order by 2 desc;
 
 /*
 05. Eliminar todos los objetos de la base de datos creados a lo largo de esta sesión.
 */
+drop trigger CLAVREGISTRO;
+drop trigger INS_PROY;
+drop trigger DEL_PROY;
+drop trigger UPD_PROY;
+drop trigger INS_DPT;
+drop trigger DEL_DPT;
+drop trigger UPD_DPT;
+drop table PROYECTO;
+drop table DEPARTAMENTO;
+drop table REGISTRO;
+drop sequence CLAVE_REG;
+
+drop trigger INS_EMP;
+drop trigger DEL_EM;
+drop trigger UPD_EM;
+drop table EMPLEADO;
+
+drop trigger INS_MIPRES;
+drop trigger DEL_MIPRES;
+drop trigger UPD_FDEV_MIPRES;
+drop trigger UPD_MIPRES
+drop table MI_DISPONE;
+drop table MI_PRESTAMO;
+
+drop trigger TRIG_CLAS;
+drop table CLASIFICACION;
+drop sequence SEQ_CLAS;
 
 
 --* SESIÓN 5: PL/SQL
@@ -520,19 +893,34 @@ END;
        libros. Sacar un mensaje por pantalla que indique “Aumentar fondo de
        préstamo”.
 */
-/*
+SET SERVEROUTPUT ON -- se mostrarán las salidas por pantalla
 DECLARE
-    num_libros number;
-    num_autores number;
-    num_editoriales number;
-    num_sucursales number;
-    num_lectores number;
+    total_libros NUMBER;
+    total_editorial NUMBER;
+    total_autor NUMBER;
+    total_lector NUMBER;
+    total_sucursal NUMBER;
 BEGIN
-    num_libros := select sum(LIBRO);
-    dbms_output.put_line(num_libros);
+     SELECT count(*) INTO total_libros from univ.libro;
+     SELECT count(*) INTO total_editorial from univ.editorial;
+     SELECT count(*) INTO total_autor from univ.autor;
+     SELECT count(*) INTO total_lector from univ.lector;
+     SELECT count(*) INTO total_sucursal from univ.sucursal;
+     DBMS_OUTPUT.PUT_LINE('El número total de libros es:'|| total_libros);
+     DBMS_OUTPUT.PUT_LINE('El número total de editoriales es:'|| total_editorial);
+     DBMS_OUTPUT.PUT_LINE('El número total de autores es:'|| total_autor);
+     DBMS_OUTPUT.PUT_LINE('El número total de lectores es:'|| total_lector);
+     DBMS_OUTPUT.PUT_LINE('El número total de sucursales es:'|| total_sucursal );
+  IF (total_lector > (1.2 * total_libros)) THEN
+   DBMS_OUTPUT.PUT_LINE('AUMENTAR FONDO DE PRESTAMO');
+  END IF;
+EXCEPTION
+ -- rutina genérica de tratamiento de cualquier tipo de error
+ WHEN others then raise_application_error (-20100,'error#'||sqlcode||' desc#: '|| sqlerrm);
+     
 END;
 /
-/*
+
 /*
 04. Se desea llevar un control de las actualizaciones que se realizan sobre una base de
     datos que está compuesta por las siguientes tablas:
@@ -552,4 +940,32 @@ END;
     los dos disparadores necesarios para registrar los datos de modificación en cada una
     de las tablas PROYECTO y DEPARTAMENTO. Consultar el contenido de la tabla
     REGISTRO para comprobar que los disparadores han funcionado correctamente.
+*/
+
+--* SESIÓN 6: Cursores
+
+/*
+01. Obtener el número de sucursal, la dirección y provincia de las distintas sucursales de
+    la biblioteca.
+*/
+
+/*
+02. Realizar un programa en el que dada una provincia se indique qué sucursales y
+    poblaciones de dicha provincia existen para la biblioteca.
+*/
+
+/*
+03. Obtener un listado de los lectores que tienen actualmente en préstamo el libro con
+    identificado por su ISBN, desglosado por sucursales y ordenado alfabéticamente
+    dentro de cada sucursal.
+*/
+
+/*
+04. Obtener el expediente de préstamos realizados por un lector cualquiera del que se
+    conoce su código. En el expediente debe aparecer el código y nombre del lector y a
+    continuación un listado de los libros tomados en préstamo por orden cronológico de
+    la fecha en la que se inició dicho préstamo. El expediente mostrará el ISBN de
+    dichos libros, la fecha de devolución, si ha sido devuelto, y la sucursal en la que
+    realizó dicho préstamo. Al final de dicho expediente se dará el número total de
+    préstamos realizados y pendientes.
 */
