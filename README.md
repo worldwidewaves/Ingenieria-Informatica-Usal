@@ -10,7 +10,7 @@ Todos los trabajos, programas y demás pochedades de la carrera ( ͡° ͜ʖ ͡°
 | [✔ Computadores I](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/01-PRIMERO/COMPUTADORES%20I) | [Sistemas Operativos I](https://github.com/Z41D3L/ingenieria-informatica/tree/master/02-SEGUNDO/SISTEMAS%20OPERATIVOS%20I)
 | [✔ Álgebra Computacional](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/01-PRIMERO/%C3%81LGEBRA%20COMPUTACI%C3%93NAL) | [Sistemas de Bases de Datos](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/02-SEGUNDO/SISTEMAS%20DE%20BASES%20DE%20DATOS)
 | [✔ Cálculo](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/01-PRIMERO/C%C3%81LCULO) | [Estructura de Datos y Algorítmos II](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/02-SEGUNDO/ESTRUCTURA%20DE%20DATOS%20Y%20ALGOR%C3%8DTMOS%20II)
-| Organización y Gestión de Empresas | Ingeniería del Software I
+| [Organización y Gestión de Empresas](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/01-PRIMERO/ORGANIZACI%C3%93N%20Y%20GESTI%C3%93N%20DE%20EMPRESAS) | Ingeniería del Software I
 | [Programación II](https://github.com/Z41D3L/ingenieria-informatica/tree/master/01-PRIMERO/PROGRAMACI%C3%93N%20II) | [Sistemas Operativos II](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/02-SEGUNDO/SISTEMAS%20OPERATIVOS%20II)
 | Computadores II | Informática Teórica
 || [Introducción a la Inteligencia Artificial](https://github.com/su1c1d3jerk/ingenieria-informatica-usal/tree/master/02-SEGUNDO/INTRODUCCI%C3%93N%20A%20LA%20INTELIGENCIA%20ARTIFICIAL)
