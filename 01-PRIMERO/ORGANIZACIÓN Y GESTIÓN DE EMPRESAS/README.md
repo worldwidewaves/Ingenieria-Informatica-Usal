@@ -4,7 +4,7 @@
   <img src="" width="400" height="400"/>
 </p>
 
-Yes.
+.
 
 ## Teoría
   - Capítulo 1: [Funciones reales de variable real: Límites y Continuidad](https://drive.google.com/file/d/1EoW7Btyct9Z4ZMIvvh-hTToyAHinMz--/view) | [Resumen 1](https://drive.google.com/file/d/1YgF7k3RyF5ajvzSFelulkIACbu_kSyk4/view)
