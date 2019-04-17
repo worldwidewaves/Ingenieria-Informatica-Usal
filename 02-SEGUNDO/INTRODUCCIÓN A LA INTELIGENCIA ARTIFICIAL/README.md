@@ -1,5 +1,11 @@
 # INTRODUCCIÓN A LA INTELIGENCIA ARTIFICIAL [(Google Drive)](https://drive.google.com/drive/u/0/folders/11oatPhRQAqZnc73HO7VKpOREyLKnnZzj)
 
+<p align="center">
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/02-SEGUNDO/INTRODUCCI%C3%93N%20A%20LA%20INTELIGENCIA%20ARTIFICIAL/img.jpg" width="700" height="400"/>
+</p>
+
+Está guay pero hay cursos mucho mejores en internet (claro que como el resto de la carrera pero se tienen el chiringuito montado con el tema de los títulos...)
+
 ## Teoría
   - Tema 1: [Introducción](https://drive.google.com/file/d/16scL7P1eleC4SKlmU68805jTq2Ly9W1w/view)
     - Esquema: [Curso](https://drive.google.com/file/d/1sz4OCcfn8Pp6geMdMuWXxgznZnizhUe8/view)
