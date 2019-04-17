@@ -1,7 +1,7 @@
 # CÁLCULO [(Google Drive)](https://drive.google.com/drive/u/0/folders/1VirDEdtVLTCFU3I60m_lratvpOfGTgc9)
 
 <p align="center">
-  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/C%C3%81LCULO/img.png" width="400" height="400"/>
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/C%C3%81LCULO/img.png" width="500" height="400"/>
 </p>
 
 Yes.
