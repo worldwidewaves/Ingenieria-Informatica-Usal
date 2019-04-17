@@ -1,7 +1,7 @@
 # CÁLCULO [(Google Drive)](https://drive.google.com/drive/u/0/folders/1VirDEdtVLTCFU3I60m_lratvpOfGTgc9)
 
 <p align="center">
-  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/ORGANIZACI%C3%93N%20Y%20GESTI%C3%93N%20DE%20EMPRESAS/img.jpg" width="400" height="700"/>
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/ORGANIZACI%C3%93N%20Y%20GESTI%C3%93N%20DE%20EMPRESAS/img.jpg" width="700" height="400"/>
 </p>
 
 .
