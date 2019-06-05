@@ -1,4 +1,9 @@
 # PROGRAMACIÓN II [(Google Drive)](https://drive.google.com/drive/u/0/folders/1Sj-nticPeste12EfP-RR_wBXFGKA7Hns)
+
+<p align="center">
+  <img src="https://github.com/su1c1d3jerk/ingenieria-informatica-usal/blob/master/01-PRIMERO/PROGRAMACI%C3%93N%20II/img.png" width="400" height="400"/>
+</p>
+
 Ahora con el céntuple de vectores. 
 
 Y punteros. 
