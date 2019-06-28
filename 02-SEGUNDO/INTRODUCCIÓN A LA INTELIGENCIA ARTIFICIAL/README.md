@@ -22,7 +22,7 @@ Está guay pero hay cursos mucho mejores en internet (claro que como el resto de
     - Documentación scikit-learn: [Web](https://scikit-learn.org/stable/documentation.html) | [PDF](https://drive.google.com/file/d/1uOuIjWaGzY7eJTyx6EhA0Qr85p7nxGtI/view)
     - K-Nearest Neighbors Demo: [Web](http://vision.stanford.edu/teaching/cs231n-demos/knn/) | [PDF](https://drive.google.com/file/d/1TOWx_VTv4Dl4h78BzWrbw0fm8rcyXtwx/view)
     - GIF: [Regresión Linear](https://drive.google.com/file/d/1LYEEkx7CuCddkdIJyv0DBwdftE8kOJUu/view)
-    - Documento: [Derivaci ́on del algoritmo PCA](https://drive.google.com/file/d/12doJedT_zLsR4WTvROLS1UfcEiycXank/view)
+    - Documento: [Derivacion del algoritmo PCA](https://drive.google.com/file/d/12doJedT_zLsR4WTvROLS1UfcEiycXank/view)
     - The Curse of Dimensionality in Classification: [Web](http://www.visiondummy.com/2014/04/curse-dimensionality-affect-classification/) | [PDF](https://drive.google.com/file/d/157FM1mZWfhKH79LnnuPnmtd9aQ9KzyTM/view)
   - Tema 4: [Redes Neuronales Artificiales](https://drive.google.com/file/d/19-cSl8vSV3s4YFvsrsLrq3ZDQGxcyTrs/view)
       - A Neural Network Playground: [Web](https://playground.tensorflow.org/) | [PDF](https://drive.google.com/file/d/1qoeos6_DdW5x2TmCchwmeNMc-54UM9AH/view)
